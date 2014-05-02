@@ -134,3 +134,27 @@ end
 	" >> Vagrantfile
 
 fi
+
+if [ ! -d public/wp-content ]; then
+
+	mkdir public/wp-content
+
+fi
+
+if [ ! -d public/wp-content/uploads ]; then
+
+	mkdir public/wp-content/uploads
+
+fi
+
+if [ ! -d public/wp-content/plugins ]; then
+
+	mkdir public/wp-content/plugins
+
+fi
+
+if [ ! -d public/wp-content/themes ]; then
+
+	mkdir public/wp-content/themes
+
+fi
