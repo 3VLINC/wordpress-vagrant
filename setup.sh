@@ -126,7 +126,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 	
 	end
 	
-	config.vm.synced_folder \".\", \"/vagrant\", :owner => \"vagrant\", :group => \"vagrant\"
+	config.vm.synced_folder \".\", \"/vagrant\",type:\"rsync\", :owner => \"vagrant\", :group => \"vagrant\"
 	
 	config.vm.provision :shell, :path => \"bootstrap.sh\"
 	
