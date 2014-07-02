@@ -46,18 +46,12 @@ fi
 if [ ! -h /var/www/wp-content ];
 then
 
-    cp /var/www/wordpress/wp-content /var/www/wp-content
+    cp -r /var/www/wordpress/wp-content /var/www/wp-content
+
+    chown -R vagrant:vagrant /var/www/wp-content
+
+    mkdir /var/www/wp-content/uploads
+
+    chown -R www-data:www-data /var/www/wp-content/uploads
 
 fi
-
-sudo mkdir /var/www/wp-content/
-
-sudo mkdir /var/www/wp-content/themes
-
-sudo mkdir /var/www/wp-content/plugins
-
-sudo mkdir /var/www/wp-content/uploads
-
-sudo chmod -R 755 /var/www/wp-content/uploads
-
-sudo chown -R www-data:www-data /var/www/wp-content/uploads
