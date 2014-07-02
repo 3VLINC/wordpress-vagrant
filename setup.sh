@@ -191,7 +191,7 @@ read -p "Enter the version number of WordPress you'd like to check out. Leave bl
 
 if [ "$CHECKOUT_WPVERSION" = "" ]; then
 
-CHECKOUT_WPVERSION = "master"
+CHECKOUT_WPVERSION="master"
 
 fi
 
