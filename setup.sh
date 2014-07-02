@@ -12,14 +12,15 @@ read -p "If you chose to continue any vagrant machines in this directory will be
 if [ $DELETE_VAGRANT = true ]; then
 
 	vagrant destroy
-
+else
+    exit
 fi
 
 read -p "Enter the dev url of the site (e.g. wp.dev) " domain
 
-read -p "Enter the vagrant server IP (e.g. 10.10.208.2) " ip
 
-echo "$domain will be hosted at $ip"
+
+read -p "Enter the vagrant server IP (e.g. 10.10.208.2) " ipecho "$domain will be hosted at $ip"
 
 OVERWRITE_WP_CONFIG=true
 
