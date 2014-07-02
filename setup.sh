@@ -9,7 +9,7 @@ read -p "If you chose to continue any vagrant machines in this directory will be
         DELETE_VAGRANT=true;;
     esac
 
-if [ $DELETE_VAGRANT = true ]; then
+if [ "$DELETE_VAGRANT" = true ]; then
 
 	vagrant destroy
 else
@@ -40,7 +40,7 @@ if [ -f "public/wp-config.php" ]; then
 fi
 
 
-if [ ! -f "public/wp-config.php" -o $OVERWRITE_WPCONFIG = true ]; then
+if [ ! -f "public/wp-config.php" -o "$OVERWRITE_WPCONFIG" = true ]; then
 
 	echo "writing wp-config.php"
 
@@ -147,7 +147,7 @@ if [ -f "Vagrantfile" ]; then
 
 fi
 
-if [ ! -f Vagrantfile -o $OVERWRITE_VAGRANTFILE = true ]; then
+if [ ! -f Vagrantfile -o "$OVERWRITE_VAGRANTFILE" = true ]; then
 
 	touch Vagrantfile
 	
@@ -189,7 +189,7 @@ fi
 read -p "Enter the version number of WordPress you'd like to check out. Leave blank for the latest " CHECKOUT_WPVERSION
 
 
-if [ CHECKOUT_WPVERSION = "" ]; then
+if [ "$CHECKOUT_WPVERSION" = "" ]; then
 
 CHECKOUT_WPVERSION = "master"
 
