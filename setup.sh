@@ -186,22 +186,8 @@ end
 
 fi
 
-read -p "Enter the version number of WordPress you'd like to check out. Leave blank for the latest " CHECKOUT_WPVERSION
-
-
-if [ "$CHECKOUT_WPVERSION" = "" ]; then
-
-CHECKOUT_WPVERSION="master"
-
-fi
-
-cd public/wordpress
-
-git fetch
-
-git checkout $CHECKOUT_WPVERSION
-
-cd ../
+# Download WordPress Submodule
+git submodule update --init --recursive
 
 read -p "Would you like to run vagrant up now? " RESPONSE_DO_VAGRANT_UP
 

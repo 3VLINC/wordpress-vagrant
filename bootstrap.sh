@@ -43,6 +43,13 @@ fi
 
 
 #Make wp-content default folders and make upload folder writable by server
+if [ ! -h /var/www/wp-content ];
+then
+
+    cp /var/www/wordpress/wp-content /var/www/wp-content
+
+fi
+
 sudo mkdir /var/www/wp-content/
 
 sudo mkdir /var/www/wp-content/themes
