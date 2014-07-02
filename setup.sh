@@ -1,10 +1,9 @@
 #!/bin/bash
 
 read -p "Enter the dev url of the site (e.g. wp.dev) " domain
-read -p "Enter the vagrant server hostname (e.g. wp-dev) " hostname
 read -p "Enter the vagrant server IP (e.g. 192.168.208.2) " ip
 
-echo "$domain will be hosted on virtual server $hostname at $ip" 
+echo "$domain will be hosted at $ip"
 
 if [ ! -f public/wp-config.php ]; then
 
@@ -108,7 +107,7 @@ VAGRANTFILE_API_VERSION = \"2\"
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 	
-	config.vm.hostname = \"$hostname\"
+	config.vm.hostname = \"$domain\"
 	
 	config.vm.box = \"precise64\"
 	
@@ -118,7 +117,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 	
 	config.vm.provider :virtualbox do |vb|
 	
-		vb.name = \"$hostname\"
+		vb.name = \"$domain\"
 	
 		vb.customize [\"modifyvm\", :id, \"--natdnshostresolver1\", \"on\"]
 	
