@@ -201,8 +201,6 @@ git fetch
 
 git checkout $CHECKOUT_WPVERSION
 
-git pull
-
 cd ../
 
 read -p "Would you like to run vagrant up now? " RESPONSE_DO_VAGRANT_UP
