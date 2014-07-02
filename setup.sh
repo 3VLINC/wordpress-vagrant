@@ -1,11 +1,45 @@
 #!/bin/bash
 
+DELETE_VAGRANT=false
+
+read -p "If you chose to continue any vagrant machines in this directory will be destroyed. Are you sure you want to continue? y/n " RESPONSE_DELETE_VAGRANT
+
+	case $RESPONSE_DELETE_VAGRANT in
+    y|Y)
+        DELETE_VAGRANT=true;;
+    esac
+
+if [ $DELETE_VAGRANT = true ]; then
+
+	vagrant destroy
+
+fi
+
 read -p "Enter the dev url of the site (e.g. wp.dev) " domain
-read -p "Enter the vagrant server IP (e.g. 192.168.208.2) " ip
+
+read -p "Enter the vagrant server IP (e.g. 10.10.208.2) " ip
 
 echo "$domain will be hosted at $ip"
 
-if [ ! -f public/wp-config.php ]; then
+OVERWRITE_WP_CONFIG=true
+
+if [ -f "public/wp-config.php" ]; then
+
+    OVERWRITE_WPCONFIG=false
+
+    read -p "A WP Config file already exists. Would you like to overwrite it? y/n " RESPONSE_OVERWRITE_WPCONFIG
+
+    case $RESPONSE_OVERWRITE_WPCONFIG in
+    y|Y)
+        OVERWRITE_WPCONFIG=true;;
+    esac
+
+fi
+
+
+if [ ! -f "public/wp-config.php" -o $OVERWRITE_WPCONFIG = true ]; then
+
+	echo "writing wp-config.php"
 
 	touch public/wp-config.php
 	
@@ -37,7 +71,7 @@ if [ ! -f public/wp-config.php ]; then
 	 *
 	 * @since 2.6.0
 	 */
-	" >> public/wp-config.php
+	" > public/wp-config.php
 	
 	salt=$(curl https://api.wordpress.org/secret-key/1.1/salt/)
 	
@@ -95,7 +129,22 @@ if [ ! -f public/wp-config.php ]; then
 	
 fi
 
-if [ ! -f Vagrantfile ]; then
+OVERWRITE_VAGRANTFILE=true
+
+if [ -f "Vagrantfile" ]; then
+
+    OVERWRITE_VAGRANTFILE=false
+
+    read -p "A Vagrantfile already exists. Would you like to overwrite it? y/n " RESPONSE_OVERWRITE_VAGRANTFILE
+
+    case $RESPONSE_OVERWRITE_VAGRANTFILE in
+    y|Y)
+        OVERWRITE_VAGRANTFILE=true;;
+    esac
+
+fi
+
+if [ ! -f Vagrantfile -o $OVERWRITE_VAGRANTFILE = true ]; then
 
 	touch Vagrantfile
 	
@@ -125,11 +174,18 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 	
 	end
 	
-	config.vm.synced_folder \".\", \"/vagrant\", :owner => \"vagrant\", :group => \"vagrant\"
+	config.vm.synced_folder \".\", \"/vagrant\",type:\"rsync\",rsync__exclude: [\".git/\",\"public/wp-content/uploads\"], :owner => \"vagrant\", :group => \"vagrant\"
 	
 	config.vm.provision :shell, :path => \"bootstrap.sh\"
 	
 end
-	" >> Vagrantfile
+	" > Vagrantfile
 
 fi
+
+read -p "Would you like to run vagrant up now? " RESPONSE_DO_VAGRANT_UP
+
+case $RESPONSE_DO_VAGRANT_UP in
+y|Y)
+    vagrant up --provider virtualbox;;
+esac

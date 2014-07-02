@@ -9,7 +9,6 @@ sudo pecl install xdebug
 
 cp /vagrant/data/php.ini /etc/php5/apache2/php.ini
 cp /vagrant/data/my.cnf /etc/mysql/my.cnf
-cp /vagrant/data/wp-config.php /vagrant/public/wp-config.php
 
 sudo service apache2 restart
 
@@ -43,7 +42,13 @@ then
 fi
 
 
-#Make uploads folder and make it writeable.
+#Make wp-content default folders and make upload folder writable by server
+sudo mkdir /var/www/wp-content/
+
+sudo mkdir /var/www/wp-content/themes
+
+sudo mkdir /var/www/wp-content/plugins
+
 sudo mkdir /var/www/wp-content/uploads
 
 sudo chmod -R 755 /var/www/wp-content/uploads
