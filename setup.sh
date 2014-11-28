@@ -5,7 +5,7 @@ DELETE_VAGRANT=false
 read -p "If you chose to continue any vagrant machines in this directory will be destroyed. Are you sure you want to continue? y/n " RESPONSE_DELETE_VAGRANT
 
 	case $RESPONSE_DELETE_VAGRANT in
-    y|Y)
+    y|Y|yes|YES|Yes)
         DELETE_VAGRANT=true;;
     esac
 
@@ -33,7 +33,7 @@ if [ -f "public/wp-config.php" ]; then
     read -p "A WP Config file already exists. Would you like to overwrite it? y/n " RESPONSE_OVERWRITE_WPCONFIG
 
     case $RESPONSE_OVERWRITE_WPCONFIG in
-    y|Y)
+    y|Y|yes|YES|Yes)
         OVERWRITE_WPCONFIG=true;;
     esac
 
@@ -141,7 +141,7 @@ if [ -f "Vagrantfile" ]; then
     read -p "A Vagrantfile already exists. Would you like to overwrite it? y/n " RESPONSE_OVERWRITE_VAGRANTFILE
 
     case $RESPONSE_OVERWRITE_VAGRANTFILE in
-    y|Y)
+    y|Y|yes|YES|Yes)
         OVERWRITE_VAGRANTFILE=true;;
     esac
 
