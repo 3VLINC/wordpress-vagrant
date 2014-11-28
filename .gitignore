@@ -1,5 +1,4 @@
 .DS_Store
 .vagrant
 public/wp-config.php
-public/wp-content
 Vagrantfile
