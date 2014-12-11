@@ -166,6 +166,14 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 	config.vm.box_url = \"http://files.vagrantup.com/precise64.box\"
 	
 	config.vm.network \"private_network\", ip: \"$ip\"
+
+	config.hostmanager.enabled = true
+
+	config.hostmanager.manage_host = true
+
+	config.hostmanager.ignore_private_ip = false
+
+	config.hostmanager.include_offline = true
 	
 	config.vm.provider :virtualbox do |vb|
 	
