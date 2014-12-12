@@ -1,3 +1,11 @@
+# Redirect for admin
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^wp-admin(.+)?$ /wordpress/wp-admin$1 [L,R=301]
+RewriteRule ^wp-login.php(.+)?$ /wordpress/wp-login.php$1 [L,R=301]
+</IfModule>
+
 # BEGIN WordPress
 <IfModule mod_rewrite.c>
 RewriteEngine On
