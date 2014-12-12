@@ -199,7 +199,7 @@ fi
 # Download WordPress Submodule
 git submodule update --init --recursive
 
-read -p "Would you like to run vagrant up now? " RESPONSE_DO_VAGRANT_UP
+read -p "Would you like to run vagrant up now? y/n " RESPONSE_DO_VAGRANT_UP
 
 case $RESPONSE_DO_VAGRANT_UP in
 y|Y|yes|YES|Yes)
