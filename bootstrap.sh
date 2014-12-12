@@ -40,18 +40,3 @@ then
 
     service apache2 restart
 fi
-
-
-#Make wp-content default folders and make upload folder writable by server
-if [ ! -h /var/www/wp-content ];
-then
-
-    cp -r /var/www/wordpress/wp-content /var/www/wp-content
-
-    chown -R vagrant:vagrant /var/www/wp-content
-
-    mkdir /var/www/wp-content/uploads
-
-    chown -R www-data:www-data /var/www/wp-content/uploads
-
-fi
