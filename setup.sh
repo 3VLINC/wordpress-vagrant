@@ -185,7 +185,9 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 	
 	end
 	
-	config.vm.synced_folder \".\", \"/vagrant\",type:\"rsync\",rsync__exclude: [\".git/\",\"public/wp-content/uploads\"], :owner => \"vagrant\", :group => \"vagrant\"
+	config.vm.synced_folder \".\", \"/vagrant\", id:\"site-root\", type:\"rsync\",rsync__exclude: [\".git/\",\"public/wp-content/uploads/*\"], :owner => \"vagrant\", :group => \"vagrant\"
+
+	config.vm.synced_folder \"public/wp-content/uploads\", \"/vagrant/public/wp-content/uploads\", id:\"site-uploads\", type:\"rsync\",rsync__exclude: [\"*\"], :owner => \"www-data\", :group => \"www-data\"
 	
 	config.vm.provision :shell, :path => \"bootstrap.sh\"
 	
