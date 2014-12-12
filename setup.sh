@@ -185,7 +185,9 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 	
 	end
 	
-	config.vm.synced_folder \".\", \"/vagrant\",type:\"rsync\",rsync__exclude: [\".git/\",\"public/wp-content/uploads\"], :owner => \"vagrant\", :group => \"vagrant\"
+	config.vm.synced_folder \".\", \"/vagrant\", id:\"site-root\", type:\"rsync\",rsync__exclude: [\".git/\",\"public/wp-content/uploads/*\"], :owner => \"vagrant\", :group => \"vagrant\"
+
+	config.vm.synced_folder \"public/wp-content/uploads\", \"/vagrant/public/wp-content/uploads\", id:\"site-uploads\", type:\"rsync\",rsync__exclude: [\"*\"], :owner => \"www-data\", :group => \"www-data\"
 	
 	config.vm.provision :shell, :path => \"bootstrap.sh\"
 	
@@ -197,7 +199,7 @@ fi
 # Download WordPress Submodule
 git submodule update --init --recursive
 
-read -p "Would you like to run vagrant up now? " RESPONSE_DO_VAGRANT_UP
+read -p "Would you like to run vagrant up now? y/n " RESPONSE_DO_VAGRANT_UP
 
 case $RESPONSE_DO_VAGRANT_UP in
 y|Y|yes|YES|Yes)
