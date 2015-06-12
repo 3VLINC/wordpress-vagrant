@@ -1,0 +1,11 @@
+// Fix admin bar on mobile with foundation
+@media screen and (max-width: 600px){
+  #wpadminbar {position: fixed !important; }
+}
+
+// Turn off extra boldness on fonts
+body {
+
+	// -webkit-font-smoothing:none;
+
+}

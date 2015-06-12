@@ -1,0 +1,61 @@
+// Includes FontSquirrel Fonts
+@mixin fontsquirrel-font($font-name:false, $font-file-base:false) {
+
+	@if($font-name) {
+
+		@font-face {
+		    font-family: $font-name;
+		    src: url('../fonts/' + $font-file-base + '.eot');
+		    src: url('../fonts/' + $font-file-base + '.eot?#iefix') format('embedded-opentype'),
+		         url('../fonts/' + $font-file-base + '.woff') format('woff'),
+		         url('../fonts/' + $font-file-base + '.ttf') format('truetype'),
+		         url('../fonts/' + $font-file-base + '.svg#overpassbold') format('svg');
+		    font-weight: normal;
+		    font-style: normal;
+		    
+		}
+
+	}
+
+}
+
+// Only visible to screen readers
+@mixin sr-only() {
+  margin: -1px;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip: rect(0, 0, 0, 0);
+  position: absolute;
+}
+
+@mixin background-image($background-size: 100%, $background-position: center center, $hide-inner:true) {
+  
+  display: block;
+  background-repeat:no-repeat;
+
+  @if $background-size != false {
+
+    background-position:$background-position;
+
+  } 
+
+  @if $background-size != false {
+  
+    background-size:$background-size;
+
+  }
+
+  @if $hide-inner == true {
+    
+    > * {
+    
+      @include sr-only();
+
+    }
+
+  }
+
+}

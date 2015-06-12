@@ -1,0 +1,57 @@
+// Allows the use of rem-calc() or lower-bound() in your settings
+ @import "../../../bower_components/foundation/scss/foundation/functions";
+
+ // Colors
+$theme-color-primary: #bbba5e; // gold
+
+$theme-color-secondary: #13545f; // teal
+
+$theme-color-tertiary: #9d9fa2; // gray
+
+$theme-color-quarternary: #f8f8f8; // light gray
+
+$theme-color-quinary: #e6e6e6; // lightest grey
+
+$theme-color-base: #FFFFFF; // white
+
+$theme-color-base-inverse: #676767; // dark gray
+
+$theme-font-family-primary: "OverpassRegular", sans-serif; 
+
+$theme-font-family-secondary: "RobotoCondensedRegular", sans-serif;
+
+$theme-font-family-tertiary: "Droid Serif", serif;
+
+$theme-font-color-normal:$theme-color-base-inverse;
+
+$theme-font-color-light:#636464;
+
+$theme-font-base-size:18px; // Defined in pixels
+
+$theme-font-size-xxl: $theme-font-base-size*2;
+
+$theme-font-size-xl: $theme-font-base-size*1.5;
+
+$theme-font-size-l:$theme-font-base-size*1.25;
+
+$theme-font-size-m:$theme-font-base-size;
+
+$theme-font-size-s:$theme-font-base-size*0.889;
+
+$theme-font-size-xs:$theme-font-base-size*0.722;
+
+$theme-font-size-xxs:$theme-font-base-size*0.65;
+
+$theme-spacing-xl:30px;
+
+$theme-spacing-l:20px;
+
+$theme-spacing-m:15px;
+
+$theme-spacing-s:10px;
+
+$theme-spacing-xs:5px;
+
+$theme-row-width:1000px;
+
+$theme-gutter-width:rem-calc(30);

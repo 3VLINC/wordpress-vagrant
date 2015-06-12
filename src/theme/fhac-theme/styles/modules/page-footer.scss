@@ -1,0 +1,97 @@
+.page-footer--menus {
+	
+	@include grid-row();
+	background:$theme-color-secondary;
+
+}
+
+.page-footer--menu {
+
+	@include grid-column($columns:9);
+
+}
+
+.page-footer--social-menu {
+
+	@include grid-column($columns:3);
+
+}
+
+.page-footer--contact {
+	
+	@include grid-row();
+
+	.page-footer--extended-logo-area {
+
+		@include grid-column($columns:6);
+
+	}
+
+	.page-footer--reach-out-area {
+
+		@include grid-column($columns:6);
+
+	}
+
+}
+
+.page-footer--contact {
+
+	padding-top:35px;
+
+}
+
+.page-footer--extended-logo {
+	
+	@extend .background-image-fhac-extended-logo;
+	@include background-image();
+	height:153px;
+	width:444px;
+
+}
+
+.page-footer--reach-out-area {
+
+	padding-top:35px;
+	
+}
+
+.page-footer--credits {
+
+	@include grid-row();
+
+	.page-footer--credits--text {
+
+		@include grid-column($columns:12);
+
+	}
+
+}
+
+.page-footer--credits {
+
+	text-align: right;
+	background-color: $theme-color-secondary;
+	padding: 15px 0 15px 0;
+	font-family:$theme-font-family-secondary;
+	font-size:12px;
+	color:#FFF;
+
+	p {
+		font-family: inherit;
+		font-size: inherit;
+		color:inherit;
+		margin:0px;
+		
+	}
+
+	a {
+
+		color:inherit;
+		display: inline-block;
+		padding:5px 0;
+		border-bottom:4px solid $theme-color-primary;
+
+	}
+
+}

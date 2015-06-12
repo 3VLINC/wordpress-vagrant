@@ -1,0 +1,40 @@
+.page-sidebar {
+
+	background-color:$theme-color-quinary;
+
+}
+
+.page-sidebar--module {
+	margin-bottom:$theme-spacing-l;
+}
+
+
+.page-sidebar--widget {
+
+	color:$theme-color-tertiary;
+	background:$theme-color-base;
+	padding:$theme-spacing-m;
+	text-align: center;
+	border: 1px solid $theme-color-tertiary;
+	font-size:14px;
+	line-height:18px;
+
+	p, ul, li {
+		
+		font-size:inherit;
+		line-height: inherit;
+
+	}
+
+}
+
+.page-sidebar--widget--title {
+
+	text-transform: uppercase;
+	text-align: center;
+	font-size:13px;
+	font-family:$theme-font-family-secondary;
+	color:$theme-color-tertiary;
+	margin:0 0 20px 0;
+
+}

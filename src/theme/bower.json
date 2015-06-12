@@ -1,0 +1,23 @@
+{
+  "name": "Forest Hill Animal Clinic WordPress Theme",
+  "version": "1.0",
+  "private": true,
+  "dependencies": {},
+  "authors": [
+    "Dan Imbrogno <dan@3vl.ca>"
+  ],
+  "description": "Forest Hill Animal Clinic WordPress Theme",
+  "main": "fhac-wordpress-theme/index.php",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "foundation": "zurb/bower-foundation",
+    "respond": ">= 1.4.2"
+  }
+}

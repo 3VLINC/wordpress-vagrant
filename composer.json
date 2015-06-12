@@ -1,0 +1,32 @@
+{
+	"name": "3vl/fhac-website",
+	"description":"Website for Forest Hill Animal Clinic",
+	"license":"proprietary",
+	"repositories": [
+        {
+            "type":"composer",
+            "url":"http://wpackagist.org"
+        }
+	],
+    "require": {
+        "vlucas/phpdotenv": ">=1.0.6",
+        "johnpbloch/wordpress-core-installer": "~0.1",
+        "wpackagist-plugin/advanced-custom-fields": ">=4.3.9",
+        "wpackagist-plugin/regenerate-thumbnails": ">=2.2.4",
+        "wpackagist-plugin/advanced-custom-fields":">=4.4.1",
+        "wpackagist-plugin/google-analytics-for-wordpress":">=5.4.2",
+        "wpackagist-plugin/mailchimp":">=1.4.2",
+        "wpackagist-plugin/wordpress-seo":">=2.1.1",
+        "wpackagist-plugin/recent-tweets-widget":">=1.6.3",
+	"johnpbloch/wordpress": ">4.2"
+    },
+    "config": {
+        "vendor-dir": "public/vendor"
+    },
+    "extra": {
+        "wordpress-install-dir": "public/wordpress/",
+        "installer-paths": {
+            "public/wp-content/plugins/{$name}/": ["type:wordpress-plugin"]
+        }
+    }
+}

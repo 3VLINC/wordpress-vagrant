@@ -1,0 +1,52 @@
+// Settings
+@import "settings/theme-settings";
+@import "settings/foundation-settings";
+
+// Framework
+@import "../../bower_components/foundation/scss/foundation";
+
+// Helpers
+@import 'helpers/mixins';
+@import "helpers/background-images";
+@import "helpers/fonts";
+@import "helpers/common";
+@import "helpers/plugins";
+
+// Modules
+@import "modules/page-header";
+@import "modules/page-sidebar";
+@import "modules/page-footer";
+@import "modules/reach-out";
+@import "modules/search-form";
+@import "modules/hours";
+@import "modules/latest-posts";
+@import "modules/main-menu";
+
+// Pages
+@import "templates/index";
+
+.page-main {
+
+	@include grid-row();
+
+	.page-sidebar {
+
+		@include grid-column($columns:3);
+
+	}
+
+	.page-content {
+
+		@include grid-column($columns:9, $collapse:true);
+
+	}
+
+}
+
+.page-sidebar {
+
+	padding-top:$theme-spacing-l;
+	padding-bottom:$theme-spacing-l;
+
+}
+

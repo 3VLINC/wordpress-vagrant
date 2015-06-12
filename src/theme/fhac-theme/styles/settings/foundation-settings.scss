@@ -1,0 +1,20 @@
+// Allows the use of rem-calc() or lower-bound() in your settings
+@import "../../../bower_components/foundation/scss/foundation/functions";
+
+$base-font-size: $theme-font-base-size;
+
+$rem-base: $base-font-size;
+
+// Grid
+
+	$row-width: $theme-row-width;
+
+	$column-gutter: $theme-gutter-width;
+
+// Global
+
+	$body-font-color: $theme-font-color-normal;
+
+	$body-font-family: $theme-font-family-primary;
+
+	$body-bg: $theme-color-base;

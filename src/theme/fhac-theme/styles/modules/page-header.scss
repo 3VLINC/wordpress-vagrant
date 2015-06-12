@@ -1,0 +1,115 @@
+$page-header--height:162px;
+
+.page-header {
+
+	@include grid-row();
+
+	.page-header--contact {
+
+		@include grid-column($columns:3);
+
+	}
+
+	.page-header--main {
+
+		@include grid-column($columns:9);
+
+	}
+
+}
+
+
+.page-header {
+
+	overflow: hidden;
+
+}
+
+.page-header--contact {
+
+	background:$theme-color-quarternary;
+	padding-top:$theme-spacing-l;
+	padding-bottom:$theme-spacing-l;
+	text-transform: uppercase;
+	text-align: center;
+	font-style: normal;
+	height:$page-header--height;
+
+	address {
+		font-style: inherit;
+	}
+
+	a {
+		color:inherit;
+	}
+
+	p {
+
+		&:last-child
+		{
+			margin-bottom:0px;
+		}
+	}
+
+}
+
+.page-header--address {
+
+	font-size:14px;
+	line-height:16px;
+
+}
+
+.page-header--emergency-info {
+
+	font-size:12px;
+	line-height:16px;
+
+}
+
+.page-header--address {
+	
+	margin-bottom:32px;
+
+}
+
+.page-header--emergency-info {
+
+	margin-bottom:0px;
+
+}
+
+.page-header--main {
+
+	padding-top:$theme-spacing-l;
+	padding-bottom:$theme-spacing-l;
+	height:$page-header--height;
+
+}
+
+.page-header--main--wrapper {
+
+	position:relative;
+	height: 100%;
+
+	.page-header--social-menu {
+		position: absolute;
+		top:0px;
+		right:0px;
+	}
+
+	.page-header--menu {
+		margin-top:30px; // line up with "in case of emergency" text
+	}
+
+}
+
+.page-header--title {
+
+	@include background-image();
+	@extend .background-image--fhac-logo;
+	
+	width:200px;
+	height:58px;
+
+}
