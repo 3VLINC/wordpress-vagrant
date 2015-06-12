@@ -1,8 +1,32 @@
+.search-form--container {
+	
+	position: relative;
+
+}
+
 input[type="text"].search-form--field {
 
 	border:1px solid $theme-color-tertiary;
 	background:transparent;
 	box-shadow: none;
 	height:30px;
+	font-size:14px;
+	line-height:14px;
+	padding:7px 30px 7px 7px;
+
+}
+
+.search-form--button {
+	
+	@extend .background-image--search;
+	@include strip-button-style();
+	@include background-image(50%);
+
+	height:28px;
+	width:30px;
+	position: absolute;
+	top:0px;
+	right:0px;
+	padding:0px;
 
 }

@@ -70,8 +70,18 @@
 
 .latest-posts--post--read-more {
 
-	float:right;
-	width:32px;
-	height:32px;
+	@include clearfix();
+
+	a {
+
+		@include background-image();
+		@extend .background-image--read-more;
+		width:14px;
+		height:14px;
+		float:right;
+
+	}
+
+
 
 }

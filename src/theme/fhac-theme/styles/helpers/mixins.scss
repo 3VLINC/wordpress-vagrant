@@ -59,3 +59,17 @@
   }
 
 }
+
+@mixin strip-button-style() {
+
+  background-color:transparent;
+  padding:0px;
+  margin:0px;
+  
+  &:focus, &:active, &:hover {
+      
+     background-color: transparent;
+
+  }
+
+}

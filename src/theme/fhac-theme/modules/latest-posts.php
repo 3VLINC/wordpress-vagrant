@@ -34,7 +34,11 @@
 
 				</div>
 
-				<a class="latest-posts--post--read-more" href="<?php the_permalink(); ?>"><span>Read more</span></a>
+				<div class="latest-posts--post--read-more">
+				
+					<a href="<?php the_permalink(); ?>"><span>Read more</span></a>
+
+				</div>
 
 			</section>
 
