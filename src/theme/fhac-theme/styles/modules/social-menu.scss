@@ -1,0 +1,103 @@
+.social-menu {
+
+	@extend .inline-list;
+	margin:0px;
+
+	> li {
+		
+		margin-left:10px;
+
+	}
+
+}
+
+.social-menu--follow-link {
+
+	font-size:11px;
+	text-transform: uppercase;
+	line-height: 16px;
+
+	a {
+		
+		color:inherit;
+
+		.page-footer & {
+
+			color:$theme-color-primary;
+
+		}
+
+		&:hover {
+
+			color:$theme-color-primary;
+
+		}
+
+	}
+
+}
+
+.social-menu--link a {
+
+	display: block;
+	width:16px;
+	height:16px;
+	@include background-image();
+
+}
+
+.social-menu--link--twitter a {
+	
+	@extend .background-image--twitter--gray;
+
+	.page-footer & {
+
+		@extend .background-image--twitter--gold;
+
+	}
+
+	&:hover {
+
+		@extend .background-image--twitter--gold;
+
+	}
+
+}
+
+
+.social-menu--link--facebook a {
+	
+	@extend .background-image--facebook--gray;
+
+	.page-footer & {
+
+		@extend .background-image--facebook--gold;
+
+	}
+
+	&:hover {
+
+		@extend .background-image--facebook--gold;
+
+	}
+
+}
+
+
+.social-menu--link--plus a {
+	
+	@extend .background-image--plus--gray;
+
+	.page-footer & {
+
+		@extend .background-image--plus--gold;
+
+	}
+
+	&:hover {
+
+		@extend .background-image--plus--gold;
+
+	}
+
+}

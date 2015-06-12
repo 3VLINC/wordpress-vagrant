@@ -1,19 +1,30 @@
-.page-footer--menus {
+.page-footer {
 	
 	@include grid-row();
+
+	.page-footer--content {
+
+		@include grid-column($columns:12, $collapse:true);
+
+	}
+
+}
+
+.page-footer--menus {
+	
 	background:$theme-color-secondary;
+	position: relative;
 
 }
 
-.page-footer--menu {
 
-	@include grid-column($columns:9);
-
-}
 
 .page-footer--social-menu {
-
-	@include grid-column($columns:3);
+	
+	position:absolute;
+	top:0px;
+	right:0px;
+	padding:10px 20px 10px 0;
 
 }
 
@@ -43,7 +54,7 @@
 
 .page-footer--extended-logo {
 	
-	@extend .background-image-fhac-extended-logo;
+	@extend .background-image--fhac-extended-logo;
 	@include background-image();
 	height:153px;
 	width:444px;
