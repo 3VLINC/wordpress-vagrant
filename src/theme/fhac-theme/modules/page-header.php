@@ -32,15 +32,15 @@
 
 			</div>
 
-			<div class="page-header--menu">
-				
-				<?php Theme::loadModule('main-menu'); ?>
-
-			</div>
-
 			<div class="page-header--social-menu">
 				
 				<?php Theme::loadModule('social-menu'); ?>
+
+			</div>
+
+			<div class="page-header--menu">
+				
+				<?php Theme::loadModule('main-menu'); ?>
 
 			</div>
 

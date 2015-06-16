@@ -6,6 +6,8 @@
 
 			</div>
 
+			<?php Theme::loadModule('page-sidebar', array('class' => 'equalize')); ?>
+
 		</main>
 			
 		<?php Theme::loadModule('page-footer'); ?>

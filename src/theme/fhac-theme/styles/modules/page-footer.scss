@@ -34,13 +34,25 @@
 
 	.page-footer--extended-logo-area {
 
-		@include grid-column($columns:6);
+		@include grid-column($columns:12);
+
+		@media #{$medium-up} {
+
+			@include grid-column($columns:6);
+
+		}
 
 	}
 
 	.page-footer--reach-out-area {
 
-		@include grid-column($columns:6);
+		@include grid-column($columns:12);
+
+		@media #{$medium-up} {
+			
+			@include grid-column($columns:6);
+
+		}
 
 	}
 
@@ -58,6 +70,7 @@
 	@include background-image();
 	height:153px;
 	width:444px;
+	max-width: 100%;
 
 }
 
@@ -81,12 +94,18 @@
 
 .page-footer--credits {
 
-	text-align: right;
+	text-align: left;
 	background-color: $theme-color-secondary;
 	padding: 15px 0 15px 0;
 	font-family:$theme-font-family-secondary;
 	font-size:12px;
 	color:#FFF;
+
+	@media #{$medium-up} {
+	
+		text-align: right;
+	
+	}
 
 	p {
 		font-family: inherit;

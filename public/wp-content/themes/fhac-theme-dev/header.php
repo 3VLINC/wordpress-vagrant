@@ -57,9 +57,5 @@
 		<?php Theme::loadModule('page-header'); ?>
 
 		<main class="page-main">
-			
-			
-			<?php Theme::loadModule('page-sidebar', array('class' => 'equalize')); ?>
-
 
 			<div class="page-content equalize">

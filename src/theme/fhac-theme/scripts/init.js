@@ -1,9 +1,17 @@
 module.exports = function() {
 
-	var Equalizer = require('equalizer');
+	var $ = require('jquery');
 
-	var myEqualizer = new Equalizer('.equalize');
-	   
-	myEqualizer.align();
+	require('matchHeight');
+
+	$(document).ready(
+		function() {
+			
+			$('.page-header > div').matchHeight();
+
+			$('.page-main > div').matchHeight();
+
+		}
+	);
 
 }

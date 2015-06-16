@@ -26,6 +26,6 @@
 
 	</div>
 
-	<p class="reach-out--contact-us">Contact us: <a href="mailto:reception@foresthillanimalclinic.ca" class="reach-out--contact-us--email"><span>reception@foresthillanimalclinic.ca</span></a>
+	<p class="reach-out--contact-us"><span class="reach-out--contact-us--label">Contact us:</span> <a href="mailto:reception@foresthillanimalclinic.ca" class="reach-out--contact-us--email"><span>reception@foresthillanimalclinic.ca</span></a>
 
 </div>

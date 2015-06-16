@@ -33,6 +33,7 @@
     "fastclick": "./bower_components/fastclick/lib/fastclick.js",
     "jquery-placeholder": "./bower_components/jquery-placeholder/jquery.placeholder.js",
     "jquery.cookie": "./bower_components/jquery.cookie/jquery.cookie.js",
+    "matchHeight": "./bower_components/matchHeight/jquery.matchHeight.js",
     "respond": "./bower_components/respond/dest/respond.src.js",
     "modernizr": "./node_modules/browsernizr/index.js"
   },

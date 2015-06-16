@@ -1,29 +1,19 @@
-.customize-support {
+.tp_recent_tweets {
+	
+	float:none;
+	clear:none;
 
-	.widget_tp_widget_recent_tweets {
-		
-		
-
+	ul {
+		margin:0px;
 	}
 
-	.tp_recent_tweets {
-		
+	li {
+
+		background: none;
+		padding:0px;
+		text-align: left;
 		float:none;
-		clear:none;
-
-		ul {
-			margin:0px;
-		}
-
-		li {
-
-			background: none;
-			padding:0px;
-			text-align: left;
-			float:none;
-			clear: none;
-
-		}
+		clear: none;
 
 	}
 

@@ -32,13 +32,25 @@
 
 	.page-sidebar {
 
-		@include grid-column($columns:3);
+		@include grid-column($columns:12);
+
+		@media #{$medium-up} {
+		
+			@include grid-column($columns:3, $pull:9);
+
+		}
 
 	}
 
 	.page-content {
 
-		@include grid-column($columns:9, $collapse:true);
+		@include grid-column($columns:12);
+		
+		@media #{$medium-up} {
+
+			@include grid-column($columns:9, $collapse:false, $push:3);
+
+		}
 
 	}
 

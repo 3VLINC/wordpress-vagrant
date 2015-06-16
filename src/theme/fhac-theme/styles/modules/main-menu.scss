@@ -12,8 +12,17 @@
 	> li {
 
 		margin-left:0px;
-		margin-right:26px;
-		padding:8px 12px;
+		margin-right:0px;
+		padding:8px;
+
+		@media #{$large-up} {
+			
+			margin-right:26px;
+			padding:8px 12px;
+
+		}
+
+		
 
 		border-bottom:5px solid transparent;
 

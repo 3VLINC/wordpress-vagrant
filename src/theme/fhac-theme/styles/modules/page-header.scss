@@ -1,27 +1,30 @@
-$page-header--height:162px;
-
 .page-header {
 
 	@include grid-row();
 
 	.page-header--contact {
 
-		@include grid-column($columns:3);
+		@include grid-column($columns:12);
+
+		@media #{$medium-up} {
+			
+			@include grid-column($columns:3);
+
+		}
 
 	}
 
 	.page-header--main {
 
-		@include grid-column($columns:9);
+		@include grid-column($columns:12);
+
+		@media #{$medium-up} {
+		
+			@include grid-column($columns:9);
+
+		}
 
 	}
-
-}
-
-
-.page-header {
-
-	overflow: hidden;
 
 }
 
@@ -33,7 +36,6 @@ $page-header--height:162px;
 	text-transform: uppercase;
 	text-align: center;
 	font-style: normal;
-	height:$page-header--height;
 
 	address {
 		font-style: inherit;
@@ -83,7 +85,6 @@ $page-header--height:162px;
 
 	padding-top:$theme-spacing-l;
 	padding-bottom:$theme-spacing-l;
-	height:$page-header--height;
 
 }
 
@@ -93,9 +94,17 @@ $page-header--height:162px;
 	height: 100%;
 
 	.page-header--social-menu {
-		position: absolute;
-		top:0px;
-		right:0px;
+		
+		margin:0 auto;
+
+		@media #{$medium-up} {
+	
+			position: absolute;
+			top:0px;
+			right:0px;
+
+		}
+
 	}
 
 	.page-header--menu {
@@ -111,5 +120,13 @@ $page-header--height:162px;
 	
 	width:200px;
 	height:58px;
+	max-width:100%;
+	margin:0 auto 20px auto;
+
+	@media #{$medium-up} {
+
+		margin:0px;
+
+	}
 
 }
