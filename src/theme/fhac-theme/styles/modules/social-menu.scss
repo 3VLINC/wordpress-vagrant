@@ -1,102 +1,171 @@
 .social-menu {
 
-	@extend .inline-list;
-	margin:0px;
+	ul {
 
-	> li {
-		
-		margin-left:10px;
+		margin:0px;
+		list-style: none;
 
 	}
 
-}
+	.social-menu--container--link > a {
+			
+		display: none;
 
-.social-menu--follow-link {
+	}
 
-	font-size:11px;
-	text-transform: uppercase;
-	line-height: 16px;
+	.social-menu--networks {
 
-	a {
+		@include clearfix();
+		margin:0 auto;
+		width:32 * 4px;
+
+	}
+
+	.social-menu--network {
+
+		float:left;
+		clear:none;
+		height:32px;
+		width:32px;
+
+	}
+
+	.social-menu--network a {
+
+		display: block;
+		height:100%;
+		width:100%;
+
+	}
+
+	.social-menu--network--twitter a {
 		
-		color:inherit;
-
-		.page-footer & {
-
-			color:$theme-color-primary;
-
-		}
+		@extend .background-image--twitter--gray;
 
 		&:hover {
 
-			color:$theme-color-primary;
+			@extend .background-image--twitter--gold;
 
 		}
 
 	}
 
-}
 
-.social-menu--link a {
+	.social-menu--network--facebook a {
+		
+		@extend .background-image--facebook--gray;
 
-	display: block;
-	width:16px;
-	height:16px;
-	@include background-image();
+		&:hover {
 
-}
+			@extend .background-image--facebook--gold;
 
-.social-menu--link--twitter a {
+		}
+
+	}
+
+
+	.social-menu--network--plus a {
+		
+		@extend .background-image--plus--gray;
+
+		&:hover {
+
+			@extend .background-image--plus--gold;
+
+		}
+
+	}
+
+	.social-menu--network--blog a {
+		
+		@extend .background-image--blog--gray;
+
+		&:hover {
+
+			@extend .background-image--blog--gold;
+
+		}
+
+	}
+
+	@media #{$small-only} {
+		
+		.social-menu--network a {
+
+			@include background-image($background-size:60% 60%, $background-position:center center, $hide-inner:true);
+
+		}
+
+	}
+
+	@media #{$medium-up} {
+
+		@include dropdown-menu($z-index:3, $width:140px, $float:right);
+
+		.social-menu--container--link {	
+
+			> a {
+
+				@include background-image();
+				@extend .background-image--follow--gray;
+
+				height:26px;
+				width:140px;
+
+				.page-footer & {
+					
+					@extend .background-image--follow--gold;
+
+				}
+
+				&:hover {
+
+					@extend .background-image--follow--gray--hover;
+
+					.page-footer & {
+					
+						@extend .background-image--follow-gold;
+
+					}
+
+				}
+
+			}
+
+		}
+
+		.social-menu--networks {
 	
-	@extend .background-image--twitter--gray;
+			width:100%;
+			background:$theme-color-base;
+			padding-top:20px;
 
-	.page-footer & {
+		}
 
-		@extend .background-image--twitter--gold;
+		.social-menu--network {
 
-	}
+			width:70px;
+			height:70px;
 
-	&:hover {
+		}
 
-		@extend .background-image--twitter--gold;
+		.social-menu--network a {
+			
+			@include background-image($background-size:40% 40%, $background-position:center top, $hide-inner:false);
 
-	}
+			text-align: center;
+			padding:40px 10px 10px 10px;
+			font-size:13px;
+			line-height:20px;
+			color:$theme-color-tertiary;
 
-}
+			&:hover {
 
+				color:$theme-color-primary;
 
-.social-menu--link--facebook a {
-	
-	@extend .background-image--facebook--gray;
-
-	.page-footer & {
-
-		@extend .background-image--facebook--gold;
-
-	}
-
-	&:hover {
-
-		@extend .background-image--facebook--gold;
-
-	}
-
-}
-
-
-.social-menu--link--plus a {
-	
-	@extend .background-image--plus--gray;
-
-	.page-footer & {
-
-		@extend .background-image--plus--gold;
-
-	}
-
-	&:hover {
-
-		@extend .background-image--plus--gold;
+			}
+		
+		}
 
 	}
 

@@ -1,3 +1,5 @@
 <?php namespace Theme; ?>
 
-<?php Menus::MainMenu(); ?>
+<?php if(!isset($depth)) $depth = 1; ?>
+
+<?php Menus::MainMenu($depth); ?>

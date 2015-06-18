@@ -1,11 +1,25 @@
-<ul class="social-menu">
+<div class="social-menu">
 
-	<li class="social-menu--link social-menu--link--facebook"><a href="#"><span>Facebook</span></a></li>
-	
-	<li class="social-menu--link social-menu--link--twitter"><a href="#"><span>Twitter</span></a></li>
-	
-	<li class="social-menu--link social-menu--link--plus"><a href="#"><span>More</span></a></li>
-	
-	<li class="social-menu--follow-link"><a href="#">Follow</a></li>
+	<ul class="social-menu--container">
+		
+		<li class="social-menu--container--link">
 
-</ul>
+			<a href="#"><span>Follow</span></a>
+			
+			<ul class="social-menu--networks" >
+
+				<li class="social-menu--network social-menu--network--facebook"><a href="#"><span>Facebook</span></a></li>
+		
+				<li class="social-menu--network social-menu--network--twitter"><a href="#"><span>Twitter</span></a></li>
+		
+				<li class="social-menu--network social-menu--network--plus"><a href="#"><span>Google</span></a></li>
+
+				<li class="social-menu--network social-menu--network--blog"><a href="#"><span>Blog</span></a></li>
+
+			</ul>
+
+		</li>
+
+	</ul>
+
+</div>

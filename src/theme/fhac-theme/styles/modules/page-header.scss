@@ -108,8 +108,40 @@
 	}
 
 	.page-header--menu {
-		margin-top:30px; // line up with "in case of emergency" text
+		
+		margin-top:10px;
+
+		@media #{$medium-up}
+		{
+			margin-top:30px; // line up with "in case of emergency" text
+		}
+
 	}
+
+}
+
+.page-header--menu .page-header--mobile-menu-toggle {
+
+	display: block;
+	text-align: center;
+	color:$theme-color-tertiary;
+	text-transform: uppercase;
+	border:1px solid #CCC;
+	border-left:0px;
+	border-right:0px;
+
+	html.no-js & {
+		
+		display: none;
+
+	}
+
+	@media #{$medium-up} {
+	
+		display: none;
+
+	}
+	
 
 }
 

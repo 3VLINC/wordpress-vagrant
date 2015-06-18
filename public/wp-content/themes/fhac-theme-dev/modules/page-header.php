@@ -40,7 +40,9 @@
 
 			<div class="page-header--menu">
 				
-				<?php Theme::loadModule('main-menu'); ?>
+				<a href="#" data-menu-toggle="menu-main-menu" class="page-header--mobile-menu-toggle"><span>Menu</span></a>
+
+				<?php Theme::loadModule('main-menu', array('depth' => 2)); ?>
 
 			</div>
 

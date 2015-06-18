@@ -371,6 +371,21 @@ module.exports = function() {
 
 			$('.page-main > div').matchHeight();
 
+			$('html').removeClass('no-js').addClass('js');
+
+			$('[data-menu-toggle]').on(
+				'click',
+				function(e) {
+					
+					var menu_id = $(this).data('menu-toggle');
+
+					$('#'+menu_id).toggleClass('menu--active');
+
+					e.preventDefault();
+
+				}
+			);
+
 		}
 	);
 

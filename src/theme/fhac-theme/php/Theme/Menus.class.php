@@ -32,13 +32,13 @@ class Menus
 
 	}
 
-    public static function MainMenu()
+    public static function MainMenu($depth)
     {
 
         wp_nav_menu(
             array(
                 'theme_location'  => self::MENU_MAIN,
-                'depth'           => 1,
+                'depth'           => $depth,
                 'fallback_cb' => false,
                 'menu_class' => 'main-menu'
             )

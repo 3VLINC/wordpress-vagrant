@@ -73,3 +73,77 @@
   }
 
 }
+
+@mixin dropdown-menu($z-index:2, $width: 200px, $float:left) {
+
+   a {
+
+      display: block;
+
+    }
+    
+  @media #{$medium-up} {
+
+    clear: both;
+    float: left;
+    width: 100%;
+    z-index: $z-index;
+    position: relative;
+  
+   
+
+    ul {
+
+      float: $float;
+      position: relative;
+      overflow: visible;
+
+      li {
+
+        float: left;
+        position: relative;
+
+        
+
+        &:last-child ul {
+
+          left: auto;
+          right: 0;
+          text-align: right;
+
+        }
+
+        &:hover ul {
+
+          display: block;
+
+        }
+
+      }
+
+      ul {
+      
+        display: none;
+        position: absolute;
+        // top: 2em;
+        left: 0;
+        right: auto;
+        width: $width;
+        z-index: $z-index + 1;
+
+        li {
+         
+          left: auto;
+          margin: 0;
+          clear: left;
+          width: 100%;
+
+        }
+
+      }
+
+    }
+   
+   }
+
+}

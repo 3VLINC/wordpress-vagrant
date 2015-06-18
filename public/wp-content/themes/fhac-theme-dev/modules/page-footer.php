@@ -8,7 +8,7 @@
 			
 			<div class="page-footer--menu">
 				
-				<?php Menus::MainMenu(); ?>
+				<?php Theme::loadModule('main-menu', array('depth' => 1)) ?>
 
 			</div>
 
