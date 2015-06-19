@@ -23,7 +23,7 @@
 	</div>
 
 	<div class="page-header--main">
-
+	
 		<div class="page-header--main--wrapper">
 
 			<div class="page-header--title">
@@ -39,10 +39,8 @@
 			</div>
 
 			<div class="page-header--menu">
-				
-				<a href="#" data-menu-toggle="menu-main-menu" class="page-header--mobile-menu-toggle"><span>Menu</span></a>
 
-				<?php Theme::loadModule('main-menu', array('depth' => 2)); ?>
+				<?php Theme::loadModule('main-menu', array('top_bar' => true)); ?>
 
 			</div>
 

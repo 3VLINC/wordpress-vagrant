@@ -1,3 +1,4 @@
+// Recent Tweets Plugin
 .tp_recent_tweets {
 	
 	float:none;
@@ -14,6 +15,150 @@
 		text-align: left;
 		float:none;
 		clear: none;
+
+	}
+
+}
+
+// Foundation Top Bar
+ .top-bar 
+ {
+
+	// Mobile menu toggle button
+ 	.toggle-topbar.menu-icon {
+
+		width:100%;
+
+	}
+
+	.toggle-topbar.menu-icon a {
+		
+		text-align: center;
+		margin:0 auto;
+		width:80px;
+
+	}
+
+	// Mobile menu tweaks
+	@media #{$small-only} {
+
+	
+		.top-bar-section li {
+			
+			background:$theme-color-quarternary;
+
+		}
+
+		.top-bar-section ul li a {
+
+			padding:10px;
+		
+		}
+
+		.top-bar-section li.menu-item {
+				
+			border-bottom:1px solid $theme-color-base;
+		
+		}
+
+		.top-bar-section li.has-dropdown > a {
+				
+			@include background-image($background-size:18px 18px, $background-position:center right, $hide-inner:false);
+			background-image:url($background-image-slideover-arrow);
+
+		}
+
+		// fixes bg image disappears on hover
+		.top-bar-section li.has-dropdown:hover:not(.has-form) > a {
+			
+			@include background-image($background-size:18px 18px, $background-position:center right, $hide-inner:false);
+			background-image:url($background-image-slideover-arrow);
+
+		}
+
+		.top-bar-section ul li .dropdown li {
+
+			&.title.back h5 a {
+
+				text-transform: uppercase;
+				background-color:$theme-color-tertiary;
+				color:$theme-color-base;
+				font-size:12px;
+
+			}
+
+			&.parent-link a {
+
+				font-weight: bold;
+				border-bottom:1px solid $theme-color-base;
+
+			}
+
+		}		
+
+	}
+
+	// Desktop menu tweaks
+	@media #{$medium-up} {
+
+		// top level menu items
+		.top-bar-section > ul > li {
+
+			border-bottom:5px solid transparent;
+			margin-right:6px;
+
+			&:hover, &.current-menu-item, &.current-menu-ancestor {
+			
+				border-bottom-color: $theme-color-primary;
+			
+			}
+
+			// top level menu items with a dropdown menu
+			&.has-dropdown:not(.has-form) > a:not(.button) {
+				
+				padding-right:15px;
+				@include background-image($background-size:10px 10px, $background-position:center right, $hide-inner: false);
+				background-image:url($background-image-dropdown-arrow);
+					
+			}
+
+		}
+
+		// second level menu items
+		.top-bar-section ul > li > ul > li {
+
+			&:not(:last-child) {
+			
+				border-bottom:1px solid #f2f2f2;
+			
+			}
+
+			a:not(.button) {
+
+				line-height:20px;
+				padding:10px;
+
+			}
+
+			a:hover {
+
+				color:$theme-color-secondary !important;
+
+			}
+
+		}
+
+	}
+
+	// Large menu tweaks
+	@media #{$large-up} {
+
+		// top level menu items
+		.top-bar-section > ul > li {
+
+			margin-right:12px;
+
+		}
 
 	}
 

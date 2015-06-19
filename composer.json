@@ -18,7 +18,7 @@
         "wpackagist-plugin/mailchimp":">=1.4.2",
         "wpackagist-plugin/wordpress-seo":">=2.1.1",
         "wpackagist-plugin/recent-tweets-widget":">=1.6.3",
-	"johnpbloch/wordpress": ">4.2"
+	   "johnpbloch/wordpress": ">4.2"
     },
     "config": {
         "vendor-dir": "public/vendor"

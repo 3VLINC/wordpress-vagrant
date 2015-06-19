@@ -13,18 +13,45 @@
 .page-footer--menus {
 	
 	background:$theme-color-secondary;
-	position: relative;
+	
+	@include grid-row();
+	padding-top:10px;
+	padding-bottom:0px;
 
 }
 
 
+.page-footer--menu {
+
+	@include grid-column($columns:12);
+
+	@media #{$medium-up} {
+
+		@include grid-column($columns:9);
+
+	}
+
+}
+
+.page-footer--menu {
+	@media #{$small-only} { padding-top:10px; padding-bottom:10px; }
+}
 
 .page-footer--social-menu {
 	
-	position:absolute;
-	top:0px;
-	right:0px;
-	padding:10px 20px 10px 0;
+	@include grid-column($columns:12);
+
+	@media #{$medium-up} {
+
+		@include grid-column($columns:3);
+
+	}
+
+}
+
+.page-footer--social-menu {
+	
+	@media #{$small-only} { padding-top:10px; padding-bottom:10px; }
 
 }
 

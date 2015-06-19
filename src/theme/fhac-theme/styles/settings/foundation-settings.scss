@@ -18,3 +18,28 @@ $rem-base: $base-font-size;
 	$body-font-family: $theme-font-family-primary;
 
 	$body-bg: $theme-color-base;
+
+// Topbar
+// 
+	$topbar-bg-color: transparent;
+	$topbar-dropdown-bg: $theme-color-base;
+	$topbar-dropdown-link-bg-hover:transparent;
+	$topbar-link-bg: transparent;
+	$topbar-dropdown-link-bg:transparent;
+	$topbar-dropdown-link-color:$theme-color-tertiary;
+
+	$topbar-link-color: $theme-color-tertiary;
+	$topbar-link-color-hover: $theme-color-tertiary;
+	$topbar-link-bg-hover: transparent;
+	$topbar-link-text-transform: uppercase;
+	$topbar-link-font-family:$theme-font-family-secondary;
+	$topbar-link-font-size: 13px;
+	$topbar-link-hover-lightness:0%;
+	$topbar-link-padding:rem-calc(0);
+
+	$topbar-menu-link-color: $theme-color-base-inverse;
+	$topbar-menu-icon-color: $theme-color-base-inverse;
+	$topbar-menu-link-color-toggled: lighten($theme-color-base-inverse, 20%);
+	$topbar-menu-icon-color-toggled: lighten($theme-color-base-inverse, 20%);
+	$topbar-menu-icon-position: left;
+	$topbar-arrows: false;

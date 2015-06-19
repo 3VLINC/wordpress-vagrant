@@ -40,11 +40,27 @@
 
 	.social-menu--network--twitter a {
 		
-		@extend .background-image--twitter--gray;
+		background-image:url($background-image-twitter-gray);
 
 		&:hover {
 
-			@extend .background-image--twitter--gold;
+			background-image:url($background-image-twitter-gold);
+
+		}
+
+		.page-footer & {
+
+			@media #{$small-only} {
+				
+				background-image:url($background-image-twitter-gold);
+
+				&:hover {
+
+					background-image:url($background-image-twitter-white);
+
+				}
+
+			}
 
 		}
 
@@ -53,11 +69,27 @@
 
 	.social-menu--network--facebook a {
 		
-		@extend .background-image--facebook--gray;
+		background-image:url($background-image-facebook-gray);
 
 		&:hover {
 
-			@extend .background-image--facebook--gold;
+			background-image:url($background-image-facebook-gold);
+
+		}
+
+		.page-footer & {
+
+			@media #{$small-only} {
+				
+				background-image:url($background-image-facebook-gold);
+
+				&:hover {
+
+					background-image:url($background-image-facebook-white);
+
+				}
+
+			}
 
 		}
 
@@ -66,11 +98,27 @@
 
 	.social-menu--network--plus a {
 		
-		@extend .background-image--plus--gray;
+		background-image:url($background-image-plus-gray);
 
 		&:hover {
 
-			@extend .background-image--plus--gold;
+			background-image:url($background-image-plus-gold);
+
+		}
+
+		.page-footer & {
+
+			@media #{$small-only} {
+				
+				background-image:url($background-image-plus-gold);
+
+				&:hover {
+
+					background-image:url($background-image-plus-white);
+
+				}
+
+			}
 
 		}
 
@@ -78,11 +126,27 @@
 
 	.social-menu--network--blog a {
 		
-		@extend .background-image--blog--gray;
+		background-image:url($background-image-blog-gray);
 
 		&:hover {
 
-			@extend .background-image--blog--gold;
+			background-image:url($background-image-blog-gold);
+
+		}
+
+		.page-footer & {
+
+			@media #{$small-only} {
+				
+				background-image:url($background-image-blog-gold);
+
+				&:hover {
+
+					background-image:url($background-image-blog-white);
+
+				}
+
+			}
 
 		}
 

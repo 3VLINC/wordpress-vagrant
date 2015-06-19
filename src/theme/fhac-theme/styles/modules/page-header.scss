@@ -16,7 +16,7 @@
 
 	.page-header--main {
 
-		@include grid-column($columns:12);
+		@include grid-column($columns:12, $collapse:true);
 
 		@media #{$medium-up} {
 		
@@ -84,7 +84,12 @@
 .page-header--main {
 
 	padding-top:$theme-spacing-l;
-	padding-bottom:$theme-spacing-l;
+	
+	@media #{$medium-up} {
+	
+		padding-bottom:$theme-spacing-l;
+
+	}
 
 }
 
@@ -108,8 +113,6 @@
 	}
 
 	.page-header--menu {
-		
-		margin-top:10px;
 
 		@media #{$medium-up}
 		{

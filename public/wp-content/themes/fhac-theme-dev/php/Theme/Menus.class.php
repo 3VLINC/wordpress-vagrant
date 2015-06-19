@@ -32,17 +32,31 @@ class Menus
 
 	}
 
-    public static function MainMenu($depth)
+    public static function MainMenu($top_bar)
     {
 
-        wp_nav_menu(
-            array(
-                'theme_location'  => self::MENU_MAIN,
-                'depth'           => $depth,
-                'fallback_cb' => false,
-                'menu_class' => 'main-menu'
-            )
+        $options = array(
+            'theme_location'  => self::MENU_MAIN,
+            'depth'           => 1,
+            'fallback_cb' => false,
+            'menu_class' => 'main-menu',
+            'container' => false
         );
+
+        if($top_bar) { 
+
+            $options['depth'] = 2;
+            $options['walker'] =  new FoundationDropdownMenuWalker(
+                array(
+                    'in_top_bar'=> true,
+                    'item_type' => 'li',
+                    'menu_type' => 'main-menu'
+                )
+            );
+
+        }
+
+        wp_nav_menu($options);
 
     }
 
