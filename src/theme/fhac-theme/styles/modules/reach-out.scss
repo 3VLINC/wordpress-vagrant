@@ -120,7 +120,11 @@
 .reach-out--contact-us--email {
 
 	@include background-image(20px, center left, false);
-	@extend .background-image--mail;
+	@extend .background-image--mail--light-gray;
+
+	&:hover {
+		@extend .background-image--mail--dark-gray;
+	}
 
 	display: inline-block;
 	padding-left:25px;
