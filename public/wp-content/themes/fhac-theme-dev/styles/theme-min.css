@@ -5824,6 +5824,14 @@ th.hide-for-touch {
 .background-image--slideover-arrow {
   background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMzIgMzIiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxnPjxwYXRoIGZpbGw9IiM5RDlGQTIiIGQ9Ik03LjUsMjVsMTAuOC05TDcuNSw3VjBsMTcsMTMuMXY1LjdMNy41LDMyVjI1eiIvPjwvZz48L3N2Zz4='); }
 
+/* file size: 0.5ko | optimized file size: 0.4ko | base64 size: 0.5ko */
+.background-image--heading-underline, .about-us--group--title, .about-us--doctors--title, .about-us--technicians--title, .about-us--support-team--title {
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCA1MSA0IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA1MSA0IiB4bWw6c3BhY2U9InByZXNlcnZlIj48cmVjdCBmaWxsPSIjMTM1NDVGIiB3aWR0aD0iNTEiIGhlaWdodD0iNCIvPjwvc3ZnPg==); }
+
+/* file size: 0.5ko | optimized file size: 0.4ko | base64 size: 0.6ko */
+.background-image--credential-underline, .about-us--person--bio, .about-us--doctor--bio, .about-us--technician--bio, .about-us--support-team-member--bio {
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCA2MSAxIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA2MSAxIiB4bWw6c3BhY2U9InByZXNlcnZlIj48bGluZSBmaWxsPSJub25lIiBzdHJva2U9IiMxMzU0NUYiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgeDE9IjAiIHkxPSIwLjUiIHgyPSI2MSIgeTI9IjAuNSIvPjwvc3ZnPg==); }
+
 @font-face {
   font-family: 'OverpassBold';
   src: url('../fonts/Overpass_Bold-webfont.eot');
@@ -6658,6 +6666,96 @@ input[type="text"].search-form--field {
 .index--content {
   padding: 40px 0;
   font-family: "RobotoCondensedRegular", sans-serif; }
+
+.about-us--content {
+  font-size: 16px;
+  font-family: "RobotoCondensedRegular", sans-serif;
+  margin-bottom: 40px; }
+
+.about-us--group--title, .about-us--doctors--title, .about-us--technicians--title, .about-us--support-team--title {
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 51px 4px;
+  color: #bbba5e;
+  font-size: 31px;
+  font-family: "Droid Serif", serif;
+  text-align: center;
+  font-weight: normal;
+  padding: 0 0 15px 0;
+  margin: 0 0 30px 0; }
+
+.about-us--group--list, .about-us--doctors--list, .about-us--technicians--list, .about-us--support-team--list {
+  display: block;
+  padding: 0;
+  margin: 0 -0.55556rem; }
+  .about-us--group--list:before, .about-us--doctors--list:before, .about-us--technicians--list:before, .about-us--support-team--list:before, .about-us--group--list:after, .about-us--doctors--list:after, .about-us--technicians--list:after, .about-us--support-team--list:after {
+    content: " ";
+    display: table; }
+  .about-us--group--list:after, .about-us--doctors--list:after, .about-us--technicians--list:after, .about-us--support-team--list:after {
+    clear: both; }
+  .about-us--group--list > li, .about-us--doctors--list > li, .about-us--technicians--list > li, .about-us--support-team--list > li {
+    display: block;
+    float: left;
+    height: auto;
+    padding: 0 0.55556rem 1.11111rem; }
+  .about-us--group--list > li, .about-us--doctors--list > li, .about-us--technicians--list > li, .about-us--support-team--list > li {
+    list-style: none;
+    padding: 0 0.55556rem 1.11111rem;
+    width: 100%; }
+    .about-us--group--list > li:nth-of-type(1n), .about-us--doctors--list > li:nth-of-type(1n), .about-us--technicians--list > li:nth-of-type(1n), .about-us--support-team--list > li:nth-of-type(1n) {
+      clear: none; }
+    .about-us--group--list > li:nth-of-type(1n+1), .about-us--doctors--list > li:nth-of-type(1n+1), .about-us--technicians--list > li:nth-of-type(1n+1), .about-us--support-team--list > li:nth-of-type(1n+1) {
+      clear: both; }
+  @media only screen and (min-width:35.61111em) {
+    .about-us--group--list, .about-us--doctors--list, .about-us--technicians--list, .about-us--support-team--list {
+      display: block;
+      padding: 0;
+      margin: 0 -0.55556rem; }
+      .about-us--group--list:before, .about-us--doctors--list:before, .about-us--technicians--list:before, .about-us--support-team--list:before, .about-us--group--list:after, .about-us--doctors--list:after, .about-us--technicians--list:after, .about-us--support-team--list:after {
+        content: " ";
+        display: table; }
+      .about-us--group--list:after, .about-us--doctors--list:after, .about-us--technicians--list:after, .about-us--support-team--list:after {
+        clear: both; }
+      .about-us--group--list > li, .about-us--doctors--list > li, .about-us--technicians--list > li, .about-us--support-team--list > li {
+        display: block;
+        float: left;
+        height: auto;
+        padding: 0 0.55556rem 1.11111rem; }
+      .about-us--group--list > li, .about-us--doctors--list > li, .about-us--technicians--list > li, .about-us--support-team--list > li {
+        list-style: none;
+        padding: 0 0.55556rem 1.11111rem;
+        width: 33.33333%; }
+        .about-us--group--list > li:nth-of-type(1n), .about-us--doctors--list > li:nth-of-type(1n), .about-us--technicians--list > li:nth-of-type(1n), .about-us--support-team--list > li:nth-of-type(1n) {
+          clear: none; }
+        .about-us--group--list > li:nth-of-type(3n+1), .about-us--doctors--list > li:nth-of-type(3n+1), .about-us--technicians--list > li:nth-of-type(3n+1), .about-us--support-team--list > li:nth-of-type(3n+1) {
+          clear: both; } }
+  .about-us--group--list li, .about-us--doctors--list li, .about-us--technicians--list li, .about-us--support-team--list li {
+    margin-bottom: 20px; }
+
+.about-us--person--photo, .about-us--doctor--photo, .about-us--technician--photo, .about-us--support-team-member--photo {
+  margin-bottom: 38px; }
+
+.about-us--person--name, .about-us--doctor--name, .about-us--technician--name, .about-us--support-team-member--name {
+  font-family: "Droid Serif", serif;
+  color: #676767;
+  font-size: 16px;
+  font-weight: normal;
+  margin: 0px; }
+
+.about-us--person--bio, .about-us--doctor--bio, .about-us--technician--bio, .about-us--support-team-member--bio {
+  display: block;
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: 61px 1px;
+  padding: 20px 0 0 0;
+  margin: 20px 0 0 0;
+  font-size: 14px;
+  color: #9d9fa2; }
+
+.about-us--doctor--credentials, .about-us--technician--title, .about-us--support-team-member--title {
+  font-size: 16px;
+  color: #bbba5e; }
 
 .page-main {
   margin: 0 auto;

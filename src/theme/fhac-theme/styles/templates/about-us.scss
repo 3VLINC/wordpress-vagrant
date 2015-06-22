@@ -1,0 +1,106 @@
+.about-us--content {
+
+	font-size:16px;
+	font-family:$theme-font-family-secondary;
+	margin-bottom:40px;
+
+}
+
+.about-us--group--title {
+
+	@include background-image($background-size:51px 4px, $background-position: center bottom, $hide-inner:false);
+	@extend .background-image--heading-underline;
+
+	color:$theme-color-primary;
+	font-size:31px;
+	font-family: $theme-font-family-tertiary;
+	text-align: center;
+	font-weight: normal;
+	padding:0 0 15px 0;
+	margin:0 0 30px 0;
+
+}
+
+.about-us--group--list {
+	
+	@include block-grid($per_row:1);
+
+	@media #{$medium-up} {
+
+		@include block-grid($per_row:3);
+
+	}
+
+	li {
+	
+		margin-bottom:20px
+	
+	}
+
+}
+
+.about-us--person--photo {
+
+	margin-bottom:38px;
+
+}
+
+.about-us--person--name {
+
+	font-family: $theme-font-family-tertiary;
+	color:$theme-color-base-inverse;
+	font-size:16px;
+	font-weight: normal;
+	margin:0px;
+
+}
+
+.about-us--person--bio {
+
+	@include background-image($background-size:61px 1px, $background-position: left top, $hide-inner:false);
+	@extend .background-image--credential-underline;
+	
+	padding:20px 0 0 0;
+	margin:20px 0 0 0;
+	font-size:14px;
+	color:$theme-color-tertiary;
+
+}
+
+
+.about-us--doctors--list, .about-us--technicians--list, .about-us--support-team--list {
+	
+	@extend .about-us--group--list;
+
+}
+
+.about-us--doctors--title, .about-us--technicians--title, .about-us--support-team--title {
+
+	@extend .about-us--group--title;
+
+}
+
+.about-us--doctor--credentials, .about-us--technician--title, .about-us--support-team-member--title {
+
+	font-size:16px;
+	color:$theme-color-primary;
+	
+}
+
+.about-us--doctor--photo, .about-us--technician--photo, .about-us--support-team-member--photo {
+	
+	@extend .about-us--person--photo;
+
+}
+
+.about-us--doctor--name, .about-us--technician--name, .about-us--support-team-member--name {
+
+	@extend .about-us--person--name;	
+
+}
+
+.about-us--doctor--bio, .about-us--technician--bio, .about-us--support-team-member--bio {
+
+	@extend .about-us--person--bio;
+
+}
