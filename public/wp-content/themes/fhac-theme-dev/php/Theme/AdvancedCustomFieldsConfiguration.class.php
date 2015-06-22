@@ -5,7 +5,7 @@ namespace Theme;
 class AdvancedCustomFieldsConfiguration
 {
 
-	const HIDE_ACF_UI = true;
+	const HIDE_ACF_UI = false;
 
 	public function __construct()
 	{
