@@ -1,0 +1,32 @@
+.about-us-persons--title {
+
+	@include background-image($background-size:51px 4px, $background-position: center bottom, $hide-inner:false);
+	@extend .background-image--heading-underline;
+
+	color:$theme-color-primary;
+	font-size:31px;
+	font-family: $theme-font-family-tertiary;
+	text-align: center;
+	font-weight: normal;
+	padding:0 0 15px 0;
+	margin:0 0 30px 0;
+
+}
+
+.about-us-persons--list {
+	
+	@include block-grid($per_row:1);
+
+	@media #{$medium-up} {
+
+		@include block-grid($per_row:3);
+
+	}
+
+	li {
+	
+		margin-bottom:20px
+	
+	}
+
+}

@@ -1,0 +1,40 @@
+.about-us-person-details--photo {
+
+	margin-bottom:38px;
+
+}
+
+.about-us-person-details--name {
+
+	font-family: $theme-font-family-tertiary;
+	color:$theme-color-base-inverse;
+	font-size:16px;
+	font-weight: normal;
+	margin:0px;
+
+	a {
+		
+		color:inherit;
+
+	}
+
+}
+
+.about-us-person-details--bio {
+
+	@include background-image($background-size:61px 1px, $background-position: left top, $hide-inner:false);
+	@extend .background-image--credential-underline;
+	
+	padding:20px 0 0 0;
+	margin:20px 0 0 0;
+	font-size:14px;
+	color:$theme-color-tertiary;
+
+}
+
+.about-us-person-details--credentials {
+
+	font-size:16px;
+	color:$theme-color-primary;
+	
+}
