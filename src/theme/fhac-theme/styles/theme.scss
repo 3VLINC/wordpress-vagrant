@@ -59,6 +59,20 @@
 
 }
 
+
+.page-content {
+
+	padding-top:$theme-spacing-l;
+	padding-bottom:$theme-spacing-l;
+
+	body.home & {
+		
+		padding-top:0px;
+
+	}
+
+}
+
 .page-sidebar {
 
 	padding-top:$theme-spacing-l;

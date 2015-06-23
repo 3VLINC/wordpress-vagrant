@@ -1,40 +1,87 @@
-.about-us-person-details--photo {
+.about-us-person-details {
 
-	margin-bottom:38px;
+	.about-us-person-details--photo {
 
-}
-
-.about-us-person-details--name {
-
-	font-family: $theme-font-family-tertiary;
-	color:$theme-color-base-inverse;
-	font-size:16px;
-	font-weight: normal;
-	margin:0px;
-
-	a {
-		
-		color:inherit;
+		display: block;
+		margin-bottom:38px;
 
 	}
 
-}
+	.about-us-person-details--name {
 
-.about-us-person-details--bio {
+		font-family: $theme-font-family-tertiary;
+		color:$theme-color-base-inverse;
+		font-size:16px;
+		font-weight: normal;
+		margin:0px;
 
-	@include background-image($background-size:61px 1px, $background-position: left top, $hide-inner:false);
-	@extend .background-image--credential-underline;
-	
-	padding:20px 0 0 0;
-	margin:20px 0 0 0;
-	font-size:14px;
-	color:$theme-color-tertiary;
+		a {
+			
+			color:inherit;
 
-}
+		}
 
-.about-us-person-details--credentials {
+	}
 
-	font-size:16px;
-	color:$theme-color-primary;
-	
+	.about-us-person-details--credentials {
+
+		font-size:16px;
+		color:$theme-color-primary;
+		
+	}
+
+	.about-us-person-details--bio {
+
+		@include background-image($background-size:61px 1px, $background-position: left top, $hide-inner:false);
+		@extend .background-image--credential-underline;
+		
+		padding:20px 21px 0 0;
+		margin:20px 0 0 0;
+		font-size:14px;
+		color:$theme-color-tertiary;
+
+	}
+
+	.about-us-person-details--read-more {
+
+		@include background-image($background-size:100% 100%);
+		@extend .background-image--read-more;
+
+		display: inline-block;
+		float: right;
+		height:13px;
+		width:13px;
+
+	}
+
+	.about-us-person & {
+
+		@include grid-row();
+
+		.about-us-person-details--photo-area {
+
+			@include grid-column($columns:12);
+
+			@media #{$medium-up} {
+
+				@include grid-column($columns:4);
+
+			}
+
+		}
+
+		.about-us-person-details--content-area {
+
+			@include grid-column($columns:12);
+
+			@media #{$medium-up} {
+				
+				@include grid-column($columns:8);
+
+			}
+
+		}
+
+	}
+
 }

@@ -5790,7 +5790,7 @@ th.hide-for-touch {
   background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjU2NCA0MDkgMzIgMzIiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgNTY0IDQwOSAzMiAzMiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHBhdGggZmlsbD0iIzlEOUZBMiIgZD0iTTU5Niw0MzguMWwtNy43LTcuN2M0LTQuMiw0LTEwLjktMC4xLTE1LjFsLTIuOC0yLjljLTItMi00LjctMy4xLTcuNi0zLjFjLTIuOSwwLTUuNiwxLjEtNy42LDMuMWwtMi45LDIuOWMtNC4yLDQuMi00LjIsMTEsMCwxNS4ybDIuOSwyLjhjMiwyLDQuNywzLjEsNy42LDMuMWMyLjksMCw1LjYtMS4xLDcuNi0zLjFsMC41LTAuNWw3LjcsNy43TDU5Niw0MzguMXogTTU3Ny42LDQzM2MtMS45LDAtMy43LTAuNy01LjEtMi4xbC0yLjktMi45Yy0yLjgtMi44LTIuOC03LjQsMC0xMC4ybDIuOS0yLjhjMS4zLTEuNCwzLjItMi4xLDUuMS0yLjFjMS45LDAsMy43LDAuNyw1LjEsMi4xbDIuOSwyLjhjMi44LDIuOCwyLjgsNy40LDAsMTAuMmwtMi45LDIuOUM1ODEuNCw0MzIuMiw1NzkuNiw0MzMsNTc3LjYsNDMzeiIvPjwvc3ZnPg==); }
 
 /* file size: 0.6ko | optimized file size: 0.5ko | base64 size: 0.7ko */
-.background-image--read-more, .latest-posts--post--read-more a {
+.background-image--read-more, .about-us-person-details .about-us-person-details--read-more, .latest-posts--post--read-more a {
   background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjU5NiA0MDkgMzIgMzIiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgNTk2IDQwOSAzMiAzMiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHBhdGggZmlsbD0iIzlEOUZBMiIgZD0iTTYxMiw0MDkuMWMtOC44LDAtMTUuOSw3LjEtMTUuOSwxNS45czcuMSwxNS45LDE1LjksMTUuOWM4LjgsMCwxNS45LTcuMSwxNS45LTE1LjlTNjIwLjgsNDA5LjEsNjEyLDQwOS4xeiBNNjE5LDQyN2gtNXY1aC00di01aC01di00aDV2LTVoNHY1aDVWNDI3eiIvPjwvc3ZnPg==); }
 
 /* file size: 0.7ko | optimized file size: 0.6ko | base64 size: 0.8ko */
@@ -5829,7 +5829,7 @@ th.hide-for-touch {
   background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCA1MSA0IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA1MSA0IiB4bWw6c3BhY2U9InByZXNlcnZlIj48cmVjdCBmaWxsPSIjMTM1NDVGIiB3aWR0aD0iNTEiIGhlaWdodD0iNCIvPjwvc3ZnPg==); }
 
 /* file size: 0.5ko | optimized file size: 0.4ko | base64 size: 0.6ko */
-.background-image--credential-underline, .about-us-person-details--bio {
+.background-image--credential-underline, .about-us-person-details .about-us-person-details--bio {
   background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCA2MSAxIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA2MSAxIiB4bWw6c3BhY2U9InByZXNlcnZlIj48bGluZSBmaWxsPSJub25lIiBzdHJva2U9IiMxMzU0NUYiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgeDE9IjAiIHkxPSIwLjUiIHgyPSI2MSIgeTI9IjAuNSIvPjwvc3ZnPg==); }
 
 @font-face {
@@ -5994,31 +5994,78 @@ th.hide-for-touch {
   .about-us-persons--list li {
     margin-bottom: 20px; }
 
-.about-us-person-details--photo {
+.about-us-person-details .about-us-person-details--photo {
+  display: block;
   margin-bottom: 38px; }
-
-.about-us-person-details--name {
+.about-us-person-details .about-us-person-details--name {
   font-family: "Droid Serif", serif;
   color: #676767;
   font-size: 16px;
   font-weight: normal;
   margin: 0px; }
-  .about-us-person-details--name a {
+  .about-us-person-details .about-us-person-details--name a {
     color: inherit; }
-
-.about-us-person-details--bio {
+.about-us-person-details .about-us-person-details--credentials {
+  font-size: 16px;
+  color: #bbba5e; }
+.about-us-person-details .about-us-person-details--bio {
   display: block;
   background-repeat: no-repeat;
   background-position: left top;
   background-size: 61px 1px;
-  padding: 20px 0 0 0;
+  padding: 20px 21px 0 0;
   margin: 20px 0 0 0;
   font-size: 14px;
   color: #9d9fa2; }
-
-.about-us-person-details--credentials {
-  font-size: 16px;
-  color: #bbba5e; }
+.about-us-person-details .about-us-person-details--read-more {
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+  display: inline-block;
+  float: right;
+  height: 13px;
+  width: 13px; }
+  .about-us-person-details .about-us-person-details--read-more > * {
+    margin: -1px;
+    padding: 0;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    clip: rect(0, 0, 0, 0);
+    position: absolute; }
+.about-us-person .about-us-person-details {
+  margin: 0 auto;
+  max-width: 1000px;
+  width: 100%; }
+  .about-us-person .about-us-person-details:before, .about-us-person .about-us-person-details:after {
+    content: " ";
+    display: table; }
+  .about-us-person .about-us-person-details:after {
+    clear: both; }
+  .about-us-person .about-us-person-details .about-us-person-details--photo-area {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    width: 100%;
+    float: left; }
+    @media only screen and (min-width:35.61111em) {
+      .about-us-person .about-us-person-details .about-us-person-details--photo-area {
+        padding-left: 0.9375rem;
+        padding-right: 0.9375rem;
+        width: 33.33333%;
+        float: left; } }
+  .about-us-person .about-us-person-details .about-us-person-details--content-area {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    width: 100%;
+    float: left; }
+    @media only screen and (min-width:35.61111em) {
+      .about-us-person .about-us-person-details .about-us-person-details--content-area {
+        padding-left: 0.9375rem;
+        padding-right: 0.9375rem;
+        width: 66.66667%;
+        float: left; } }
 
 .page-header {
   margin: 0 auto;
@@ -6796,6 +6843,12 @@ input[type="text"].search-form--field {
         left: 25%;
         right: auto;
         float: left; } }
+
+.page-content {
+  padding-top: 20px;
+  padding-bottom: 20px; }
+  body.home .page-content {
+    padding-top: 0px; }
 
 .page-sidebar {
   padding-top: 20px;
