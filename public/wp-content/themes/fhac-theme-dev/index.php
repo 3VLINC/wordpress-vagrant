@@ -4,18 +4,7 @@
 
 	get_header();
 
-?>	
-
-<div class="index--intro">
-	
-		<h1 class="index--intro--title">Welcome to the Forest Hill Animal Clinic family</h1>
-
-		<p class="index--intro--tagline">Your trusted Toronto Veterinarian for more than 45 years.</p>
-
-		<p class="index--intro--now-accepting">Now accepting new patients. Cats and dogs welcome.</p>
-
-
-</div>
+?>
 
 <div class="index--content">
 
@@ -27,7 +16,14 @@
 
 			the_post();
 
-			the_content();
+?>
+
+	<h1><?php the_title(); ?></h1>
+
+
+	<?php the_content(); ?>
+
+<?php
 
 		}
 

@@ -6769,7 +6769,12 @@ input[type="text"].search-form--field {
     .social-menu .social-menu--network a:hover {
       color: #bbba5e; } }
 
-.index--intro {
+.index--content {
+  font-family: "RobotoCondensedRegular", sans-serif; }
+  .index--content p {
+    font-family: inherit; }
+
+.front-page--intro {
   background: url('../images/fhac-intro.jpg');
   background-size: cover;
   height: 357px;
@@ -6778,13 +6783,13 @@ input[type="text"].search-form--field {
   color: #13545f;
   margin: 0 -0.9375rem; }
 
-.index--intro--title {
+.front-page--intro--title {
   font-size: 14px;
   text-transform: uppercase;
   color: inherit;
   margin: 0 0 120px 0; }
 
-.index--intro--tagline {
+.front-page--intro--tagline {
   font-size: 24px;
   line-height: 28px;
   font-family: "Droid Serif", serif;
@@ -6792,12 +6797,12 @@ input[type="text"].search-form--field {
   color: inherit;
   margin: 0 0 5px 0; }
 
-.index--intro--now-accepting {
+.front-page--intro--now-accepting {
   text-transform: uppercase;
   font-size: 14px;
   font-weight: bold; }
 
-.index--content {
+.front-page--content {
   padding: 40px 0;
   font-family: "RobotoCondensedRegular", sans-serif; }
 
