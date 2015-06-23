@@ -28,7 +28,11 @@
 
 			<div class="page-header--title">
 				
-				<span>Forest Hill Animal Clinic</span>
+				<a href="<?php echo home_url('/'); ?>">
+					
+					<span><?php bloginfo('name'); ?></span>
+
+				</a>
 
 			</div>
 

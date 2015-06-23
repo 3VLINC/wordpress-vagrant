@@ -148,10 +148,11 @@
 
 }
 
-.page-header--title {
+.page-header--title a {
 
 	@include background-image();
 	@extend .background-image--fhac-logo;
+	
 	
 	width:200px;
 	height:58px;
