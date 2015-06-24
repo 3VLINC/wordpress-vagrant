@@ -124,13 +124,13 @@
 
 	}
 
-	.social-menu--network--blog a {
+	.social-menu--network--feedly a {
 		
-		background-image:url($background-image-blog-gray);
+		background-image:url($background-image-feedly-gray);
 
 		&:hover {
 
-			background-image:url($background-image-blog-gold);
+			background-image:url($background-image-feedly-gold);
 
 		}
 
@@ -138,11 +138,11 @@
 
 			@media #{$small-only} {
 				
-				background-image:url($background-image-blog-gold);
+				background-image:url($background-image-feedly-gold);
 
 				&:hover {
 
-					background-image:url($background-image-blog-white);
+					background-image:url($background-image-feedly-white);
 
 				}
 

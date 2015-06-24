@@ -1,3 +1,30 @@
+<?php namespace Theme; ?>
+
+<?php 
+
+foreach(Theme::getSocialMediaChannels() as $handle => $name)
+{
+
+    $url = get_theme_mod($handle);
+
+    if(!empty($url))
+    {
+
+        $links[] = sprintf(
+            '<li class="social-menu--network social-menu--network--%s"><a href="%s"><span>%s</span></a></li>',
+            $handle,
+            get_theme_mod($handle),
+            $name
+        );
+
+    }
+
+}
+
+if(!empty($links)) {
+
+?>
+
 <div class="social-menu">
 
 	<ul class="social-menu--container">
@@ -8,13 +35,7 @@
 			
 			<ul class="social-menu--networks" >
 
-				<li class="social-menu--network social-menu--network--facebook"><a href="#"><span>Facebook</span></a></li>
-		
-				<li class="social-menu--network social-menu--network--twitter"><a href="#"><span>Twitter</span></a></li>
-		
-				<li class="social-menu--network social-menu--network--plus"><a href="#"><span>Google</span></a></li>
-
-				<li class="social-menu--network social-menu--network--blog"><a href="#"><span>Blog</span></a></li>
+				<?php echo implode('', $links); ?>
 
 			</ul>
 
@@ -23,3 +44,9 @@
 	</ul>
 
 </div>
+
+<?php
+
+}
+
+?>

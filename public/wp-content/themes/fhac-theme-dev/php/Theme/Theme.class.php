@@ -88,10 +88,10 @@ class Theme {
 		
 		return array(
 
-			'facebook' => __('Facebook','aurora'),
-			'twitter' => __('Twitter','aurora'),
-			'youtube' => __('YouTube','aurora'),
-			'pinterest' => __('Pinterest','aurora')
+			'facebook' => 'Facebook',
+			'twitter' => 'Twitter',
+			'plus' => 'Google',
+			'feedly' => 'Feedly'
 			
 		);
 
