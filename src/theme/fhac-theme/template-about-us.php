@@ -1,20 +1,16 @@
-<?php namespace Theme;  ?>
+<?php 
 
-<?php /* Template Name: About Us */ ?>
+	namespace Theme; 
 
-<?php
+	/* Template Name: About Us */
 
 	get_header();
 
+	printf('<div class="about-us--content">');
+
 	if(!isset($_GET['field_name']) && !isset($_GET['id']))
 	{
-
-?>
-
-	<div class="about-us--content">
-
-	<?php 
-
+		
 		if(have_posts()) { 
 
 			while(have_posts()) {
@@ -26,12 +22,6 @@
 			}
 
 		}
-
-	?>
-
-	</div>
-
-<?php
 
 		Theme::loadModule(
 			'about-us-persons', 
@@ -71,9 +61,7 @@
 
 	}
 
-?>
-
-<?php
+	printf('</div>');
 
 	get_footer();
 

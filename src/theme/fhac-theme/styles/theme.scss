@@ -13,6 +13,7 @@
 @import "helpers/plugins";
 
 // Modules
+@import "modules/about-us-person";
 @import "modules/about-us-persons";
 @import "modules/about-us-person-details";
 @import "modules/page-header";
@@ -22,6 +23,9 @@
 @import "modules/search-form";
 @import "modules/hours";
 @import "modules/latest-posts";
+@import "modules/parent-page-menu";
+@import "modules/parent-page-section";
+@import "modules/parent-page-sections";
 @import "modules/main-menu";
 @import "modules/social-menu";
 
@@ -29,6 +33,7 @@
 @import "templates/index";
 @import "templates/front-page";
 @import "templates/about-us";
+@import "templates/parent-page";
 
 .page-main {
 
@@ -52,32 +57,10 @@
 		
 		@media #{$medium-up} {
 
-			@include grid-column($columns:9, $collapse:false, $push:3);
+			@include grid-column($columns:9, $collapse:true, $push:3);
 
 		}
 
 	}
 
 }
-
-
-.page-content {
-
-	padding-top:$theme-spacing-l;
-	padding-bottom:$theme-spacing-l;
-
-	body.home & {
-		
-		padding-top:0px;
-
-	}
-
-}
-
-.page-sidebar {
-
-	padding-top:$theme-spacing-l;
-	padding-bottom:$theme-spacing-l;
-
-}
-

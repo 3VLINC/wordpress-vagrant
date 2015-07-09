@@ -5825,7 +5825,7 @@ th.hide-for-touch {
   background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMzIgMzIiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxnPjxwYXRoIGZpbGw9IiM5RDlGQTIiIGQ9Ik03LjUsMjVsMTAuOC05TDcuNSw3VjBsMTcsMTMuMXY1LjdMNy41LDMyVjI1eiIvPjwvZz48L3N2Zz4='); }
 
 /* file size: 0.5ko | optimized file size: 0.4ko | base64 size: 0.5ko */
-.background-image--heading-underline, .about-us-persons--title {
+.background-image--heading-underline, .heading-style-one, .about-us-persons--title, .parent-page--title {
   background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCA1MSA0IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA1MSA0IiB4bWw6c3BhY2U9InByZXNlcnZlIj48cmVjdCBmaWxsPSIjMTM1NDVGIiB3aWR0aD0iNTEiIGhlaWdodD0iNCIvPjwvc3ZnPg==); }
 
 /* file size: 0.5ko | optimized file size: 0.4ko | base64 size: 0.6ko */
@@ -5863,6 +5863,22 @@ th.hide-for-touch {
 @media screen and (max-width: 600px) {
   #wpadminbar {
     position: fixed !important; } }
+
+body {
+  -webkit-font-smoothing: antialiased; }
+
+.heading-style-one, .about-us-persons--title, .parent-page--title {
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 51px 4px;
+  color: #bbba5e;
+  font-size: 31px;
+  font-family: "Droid Serif", serif;
+  text-align: center;
+  font-weight: normal;
+  padding: 0 0 15px 0;
+  margin: 0 0 30px 0; }
 
 .tp_recent_tweets {
   float: none;
@@ -5932,19 +5948,6 @@ th.hide-for-touch {
 @media only screen and (min-width:56.94444em) {
   .top-bar .top-bar-section > ul > li {
     margin-right: 12px; } }
-
-.about-us-persons--title {
-  display: block;
-  background-repeat: no-repeat;
-  background-position: center bottom;
-  background-size: 51px 4px;
-  color: #bbba5e;
-  font-size: 31px;
-  font-family: "Droid Serif", serif;
-  text-align: center;
-  font-weight: normal;
-  padding: 0 0 15px 0;
-  margin: 0 0 30px 0; }
 
 .about-us-persons--list {
   display: block;
@@ -6184,7 +6187,9 @@ th.hide-for-touch {
       margin: 0px; } }
 
 .page-sidebar {
-  background-color: #e6e6e6; }
+  background-color: #e6e6e6;
+  padding-top: 20px;
+  padding-bottom: 20px; }
 
 .page-sidebar--module {
   margin-bottom: 20px; }
@@ -6589,6 +6594,61 @@ input[type="text"].search-form--field {
     clip: rect(0, 0, 0, 0);
     position: absolute; }
 
+.parent-page-menu {
+  font-family: "RobotoCondensedRegular", sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-align: center; }
+
+.parent-page-menu--list {
+  list-style: none;
+  color: #bbba5e;
+  font-size: 14px;
+  margin: 0 0 15px 0; }
+  .parent-page-menu--list li {
+    display: inline-block; }
+  .parent-page-menu--list a {
+    color: inherit;
+    font-size: inherit; }
+
+.parent-page-menu--list-label {
+  font-style: italic;
+  color: #9d9fa2;
+  text-transform: none; }
+
+.parent-page-section--banner {
+  margin: 0 -0.9375rem 20px; }
+  .parent-page-section--banner img {
+    max-width: 100%;
+    width: 100%;
+    height: auto; }
+
+.parent-page-section--title {
+  margin-bottom: 10px;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #bbba5e; }
+
+.parent-page-section--content {
+  font-family: "RobotoCondensedRegular", sans-serif;
+  font-size: 16px; }
+  .parent-page-section--content p {
+    font-size: inherit; }
+    .parent-page-section--content p:last-child {
+      margin-bottom: 0px; }
+
+.parent-page-section--back {
+  font-family: "RobotoCondensedRegular", sans-serif;
+  font-size: 14px;
+  font-style: italic;
+  color: #bbba5e; }
+  .parent-page-section--back a {
+    font-family: inherit;
+    color: inherit; }
+
+.parent-page-sections--section-area {
+  margin-bottom: 40px; }
+
 .page-footer--menu .main-menu {
   color: #bbba5e;
   text-transform: uppercase;
@@ -6780,8 +6840,7 @@ input[type="text"].search-form--field {
   height: 357px;
   text-align: center;
   padding: 40px 20px;
-  color: #13545f;
-  margin: 0 -0.9375rem; }
+  color: #13545f; }
 
 .front-page--intro--title {
   font-size: 14px;
@@ -6803,13 +6862,28 @@ input[type="text"].search-form--field {
   font-weight: bold; }
 
 .front-page--content {
-  padding: 40px 0;
+  padding: 40px 0.9375rem 15px;
   font-family: "RobotoCondensedRegular", sans-serif; }
 
 .about-us--content {
   font-size: 16px;
   font-family: "RobotoCondensedRegular", sans-serif;
+  padding: 15px 0.9375rem; }
+
+.page-template-template-about-us .page-content {
+  background: #f8f8f8; }
+
+.parent-page--banner {
+  margin-bottom: 10px; }
+
+.parent-page--title {
   margin-bottom: 40px; }
+
+.parent-page--menu-area {
+  margin-bottom: 40px; }
+
+.parent-page--content {
+  padding: 15px 0.9375rem; }
 
 .page-main {
   margin: 0 auto;
@@ -6842,19 +6916,9 @@ input[type="text"].search-form--field {
     @media only screen and (min-width:35.61111em) {
       .page-main .page-content {
         position: relative;
-        padding-left: 0.9375rem;
-        padding-right: 0.9375rem;
+        padding-left: 0;
+        padding-right: 0;
         width: 75%;
         left: 25%;
         right: auto;
         float: left; } }
-
-.page-content {
-  padding-top: 20px;
-  padding-bottom: 20px; }
-  body.home .page-content {
-    padding-top: 0px; }
-
-.page-sidebar {
-  padding-top: 20px;
-  padding-bottom: 20px; }

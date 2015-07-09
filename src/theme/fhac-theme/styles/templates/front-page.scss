@@ -6,7 +6,6 @@
 	text-align: center;
 	padding:40px 20px;
 	color:$theme-color-secondary;
-	margin:0 -0.5 * $column-gutter;
 
 }
 
@@ -40,7 +39,7 @@
 
 .front-page--content {
 
-	padding:40px 0;
+	padding:40px ($column-gutter /2) $theme-spacing-m;
 	font-family:$theme-font-family-secondary;
 
 }
