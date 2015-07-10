@@ -11,11 +11,13 @@
 @import "helpers/fonts";
 @import "helpers/common";
 @import "helpers/plugins";
+@import "helpers/editor-styles";
 
 // Modules
 @import "modules/about-us-person";
 @import "modules/about-us-persons";
 @import "modules/about-us-person-details";
+@import "modules/blog-post";
 @import "modules/page-header";
 @import "modules/page-sidebar";
 @import "modules/page-footer";
@@ -32,8 +34,10 @@
 // Pages
 @import "templates/index";
 @import "templates/front-page";
+@import "templates/home";
 @import "templates/about-us";
 @import "templates/parent-page";
+@import "templates/single-post";
 
 .page-main {
 
@@ -53,7 +57,7 @@
 
 	.page-content {
 
-		@include grid-column($columns:12);
+		@include grid-column($columns:12, $collapse:true);
 		
 		@media #{$medium-up} {
 

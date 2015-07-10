@@ -26,3 +26,17 @@ body {
 	margin:0 0 30px 0;
 
 }
+
+.banner-column-gutter-offset {
+	
+	margin:0 -0.5 * $column-gutter 20px;
+
+	img {
+		
+		max-width: 100%;
+		width:100%;
+		height:auto;
+
+	}
+
+}

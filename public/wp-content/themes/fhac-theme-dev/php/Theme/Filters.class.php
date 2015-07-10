@@ -9,6 +9,12 @@ class Filters
 	{
 
 		add_filter('trim_bio', array($this, 'trimBio'));
+		
+		add_filter( 'excerpt_more', array($this,'removeMoreLink'));
+
+		add_filter( 'get_the_excerpt', array($this,'addMoreLinkAlways'));
+
+		add_filter( 'excerpt_length', array($this, 'changeExcerptLength') );
 
 	}
 
@@ -42,6 +48,34 @@ class Filters
 	   
 
 		return $trimmed_text;
+
+	}
+
+	public function removeMoreLink() 
+	{
+		
+		return '';
+
+	}
+
+	public function addMoreLinkAlways($excerpt) 
+	{
+		
+		if(!is_singular('post')) {
+		
+			return $excerpt.' <a class="blog-post--read-more" href="'.get_permalink().'">Read more&hellip;</a>';
+		
+		}
+
+		return $excerpt;
+
+
+	}
+
+	public function changeExcerptLength()
+	{
+		
+		return 23;
 
 	}
 
