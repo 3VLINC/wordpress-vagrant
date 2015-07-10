@@ -246,6 +246,96 @@ class AdvancedCustomFieldsConfiguration
 			));
 		}
 
+		if(function_exists("register_field_group"))
+		{
+			register_field_group(array (
+				'id' => 'acf_page-sections',
+				'title' => 'Page Sections',
+				'fields' => array (
+					array (
+						'key' => 'field_559ebed1e516f',
+						'label' => 'Page Sections',
+						'name' => 'page-sections',
+						'type' => 'repeater',
+						'instructions' => 'Add page sections',
+						'sub_fields' => array (
+							array (
+								'key' => 'field_559ebee7e5170',
+								'label' => 'Title',
+								'name' => 'title',
+								'type' => 'text',
+								'required' => 1,
+								'column_width' => '',
+								'default_value' => '',
+								'placeholder' => '',
+								'prepend' => '',
+								'append' => '',
+								'formatting' => 'html',
+								'maxlength' => '',
+							),
+							array (
+								'key' => 'field_559ec0a9b1cb6',
+								'label' => 'Banner',
+								'name' => 'banner',
+								'type' => 'image',
+								'column_width' => '',
+								'save_format' => 'object',
+								'preview_size' => 'thumbnail',
+								'library' => 'all',
+							),
+							array (
+								'key' => 'field_559ebefce5171',
+								'label' => 'Anchor',
+								'name' => 'anchor',
+								'type' => 'text',
+								'instructions' => 'All lowercase letters, with no spaces, hyphens allowed.',
+								'required' => 1,
+								'column_width' => '',
+								'default_value' => '',
+								'placeholder' => '',
+								'prepend' => '',
+								'append' => '',
+								'formatting' => 'html',
+								'maxlength' => '',
+							),
+							array (
+								'key' => 'field_559ebf3de5172',
+								'label' => 'Content',
+								'name' => 'content',
+								'type' => 'wysiwyg',
+								'column_width' => '',
+								'default_value' => '',
+								'toolbar' => 'full',
+								'media_upload' => 'yes',
+							),
+						),
+						'row_min' => '',
+						'row_limit' => '',
+						'layout' => 'row',
+						'button_label' => 'Add Section',
+					),
+				),
+				'location' => array (
+					array (
+						array (
+							'param' => 'page_template',
+							'operator' => '==',
+							'value' => 'template-parent-page.php',
+							'order_no' => 0,
+							'group_no' => 0,
+						),
+					),
+				),
+				'options' => array (
+					'position' => 'normal',
+					'layout' => 'no_box',
+					'hide_on_screen' => array (
+					),
+				),
+				'menu_order' => 0,
+			));
+		}
+
 
 	}
 

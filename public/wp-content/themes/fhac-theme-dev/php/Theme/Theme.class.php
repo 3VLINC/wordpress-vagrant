@@ -110,7 +110,7 @@ class Theme {
 		
 	}
 
-	public static function loadModule($module_name, $args = null) {
+	public static function loadModule($module_name, $args = null, $return = false) {
 
 		if(isset($args) && is_array($args))
 		{
@@ -119,7 +119,23 @@ class Theme {
 
 		}
 
+		if($return) {
+
+			ob_start();
+
+		}
+
 		require(get_template_directory().'/modules/'.$module_name.'.php');
+
+		if($return) {
+
+			$html = ob_get_contents();
+
+			ob_end_clean();
+
+			return $html;
+
+		}
 
 	}
 

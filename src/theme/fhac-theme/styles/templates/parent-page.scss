@@ -1,0 +1,24 @@
+.parent-page--banner {
+
+	margin-bottom:$theme-spacing-s;
+
+}
+
+.parent-page--title {
+
+	@extend .heading-style-one;
+	margin-bottom: 40px;
+
+}
+
+.parent-page--menu-area {
+
+	margin-bottom:40px;
+
+}
+
+.parent-page--content {
+
+	padding:$theme-spacing-m ($column-gutter / 2);
+
+}
