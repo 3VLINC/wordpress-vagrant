@@ -28,7 +28,7 @@
 		
 		<div class="blog-post--tweet-this">
 		
-			<a href="https://twitter.com/intent/tweet?url=<?php echo urlencode(get_permalink()); ?>"><span>Tweet this</span></a>
+			<a href="https://twitter.com/intent/tweet?url=<?php echo urlencode(get_permalink()); ?>" target="_blank"><span>Tweet this</span></a>
 
 		</div>
 
