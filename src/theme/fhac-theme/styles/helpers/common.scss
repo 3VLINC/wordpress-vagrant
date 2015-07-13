@@ -40,3 +40,10 @@ body {
 	}
 
 }
+
+input[type="text"] {
+	
+	border:1px solid $theme-color-tertiary;
+	box-shadow: none;
+
+}

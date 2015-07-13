@@ -1,0 +1,13 @@
+// Override default page layout
+.page-template-template-contact .page-main .page-content {
+
+	@include grid-column($columns:12, $collapse:true);
+
+	@media #{$medium-up} {
+
+		@include grid-column($columns:12, $collapse:true, $push:0);
+
+	}
+
+}
+

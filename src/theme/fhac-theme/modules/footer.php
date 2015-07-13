@@ -2,11 +2,13 @@
 
 	namespace Theme; 
 
+	if(!isset($hide_sidebar)) $hide_sidebar = false; 
+
 ?>				
 
 			</div>
 
-			<?php Theme::loadModule('page-sidebar', array('class' => 'equalize')); ?>
+			<?php if(!$hide_sidebar) Theme::loadModule('page-sidebar', array('class' => 'equalize')); ?>
 
 		</main>
 			

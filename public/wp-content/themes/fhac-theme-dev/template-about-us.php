@@ -4,7 +4,7 @@
 
 	/* Template Name: About Us */
 
-	get_header();
+	Theme::loadModule('header');
 
 	printf('<div class="about-us--content">');
 
@@ -72,6 +72,6 @@
 
 	printf('</div>');
 
-	get_footer();
+	Theme::loadModule('footer');
 
 ?>

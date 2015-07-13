@@ -1,0 +1,2 @@
+<a class="twitter-timeline" href="https://twitter.com/FHAClinic" width="500" data-widget-id="620673610911498245" data-chrome="nofooter noborders noheader noscrollbar transparent">Tweets by @FHAClinic</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>

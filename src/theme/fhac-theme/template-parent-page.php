@@ -4,7 +4,7 @@
 	
 	/* Template Name: Parent Page */
 
-	get_header();
+	Theme::loadModule('header');
 
 	if(have_posts()) { 
 
@@ -43,6 +43,6 @@
 
 	}
 
-	get_footer();
+	Theme::loadModule('footer');
 
 ?>

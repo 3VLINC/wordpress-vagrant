@@ -2,7 +2,7 @@
 	
 	namespace Theme; 
 
-	get_header();
+	Theme::loadModule('header');
 
 ?>
 
@@ -28,6 +28,6 @@
 
 <?php
 
-	get_footer();
+	Theme::loadModule('footer');
 
 ?>
