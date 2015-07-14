@@ -2,19 +2,24 @@
 
 <?php 
 
-foreach(Theme::getSocialMediaChannels() as $handle => $name)
+$networks = array();
+
+$networks['facebook'] = array('name' => "Facebook", 'url' => get_field('facebook_url','option'));
+$networks['twitter'] = array('name' => "Twitter", 'url' => get_field('twitter_url','option'));
+$networks['plus'] = array('name' => "Google", 'url' => get_field('google_plus_url','option'));
+$networks['feedly'] = array('name' => "Feedly", 'url' => get_field('feedly_url','option'));
+
+foreach($networks as $handle => $info)
 {
 
-    $url = get_theme_mod($handle);
-
-    if(!empty($url))
+    if(!empty($info['url']))
     {
 
         $links[] = sprintf(
             '<li class="social-menu--network social-menu--network--%s"><a href="%s"><span>%s</span></a></li>',
             $handle,
-            get_theme_mod($handle),
-            $name
+            $info['url'],
+            $info['name']
         );
 
     }

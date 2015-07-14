@@ -13,7 +13,6 @@ class Theme {
 		new Filters();
 		new Menus();
 		new WidgetAreas();
-		new ThemeCustomizations();
 		new AdvancedCustomFieldsConfiguration();
 		new Accessibility();
 		new ImageSizes();
@@ -80,20 +79,6 @@ class Theme {
 		$resource = '/'.$resource;
 
 		return get_stylesheet_directory().$resource;
-
-	}
-
-	public static function getSocialMediaChannels()
-	{
-		
-		return array(
-
-			'facebook' => 'Facebook',
-			'twitter' => 'Twitter',
-			'plus' => 'Google',
-			'feedly' => 'Feedly'
-			
-		);
 
 	}
 

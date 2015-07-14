@@ -15,7 +15,7 @@ module.exports = function() {
 
 			$('.page-main > div').matchHeight();
 
-			$('.contact-tools .contact-tools--module').matchHeight();
+			$('.contact--tools .contact--tools--module').matchHeight();
 
 			$('html').removeClass('no-js').addClass('js');
 

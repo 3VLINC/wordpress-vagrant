@@ -6,9 +6,9 @@
 		
 		<p class="page-header--address">
 
-			<a href="tel:416-782-1031">416-782-1031</a><br />
+			<a href="tel:<?php echo get_field('reception_phone', 'option') ?>"><?php echo get_field('reception_phone', 'option') ?></a><br />
 
-			1049 Eglinton Avenue West<br/>Toronto, Ontario | M6C 2C9
+			<?php echo get_field('street_address','option'); ?><br/><?php echo get_field('city','option'); ?>, <?php echo get_field('province','option'); ?> | <?php echo get_field('postal_code','option'); ?>
 
 		</p>
 
@@ -16,7 +16,7 @@
 
 			In case of emergency, call<br />
 
-			<a href="tel:416-784-4444">416-784-4444</a>
+			<a href="tel:<?php echo get_field('emergency_phone','option'); ?>"><?php echo get_field('emergency_phone','option'); ?></a>
 
 		</p>
 
@@ -28,7 +28,7 @@
 
 			<div class="page-header--title">
 				
-				<span>Forest Hill Animal Clinic</span>
+				<a href="<?php echo home_url(); ?>"><span><?php echo get_bloginfo('title'); ?></span></a>
 
 			</div>
 

@@ -22,7 +22,12 @@
 			
 			<div class="directions--address--field">
 
-				<input data-google-directions-to type="text" value="1051 Eglinton Ave. W, Toronto, M6C 2C9" readonly />
+				<input data-google-directions-to type="text" value="<?php printf(
+					'%s, %s, %s, %s',
+					get_field('street_address','option'), 
+					get_field('city','option'),
+					get_field('province','option'),
+					get_field('postal_code','option')); ?>" readonly />
 			
 			</div>
 

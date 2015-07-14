@@ -8,9 +8,9 @@
 			
 			<p>
 				Reception<br/>
-				416-782-1031<br/>
-				1049 Eglinton Avenue West<br/>
-				Toronto, Ontario | M6C 2C9
+				<a href="tel:<?php echo get_field('reception_phone','option'); ?>"><?php echo get_field('reception_phone','option'); ?></a><br/>
+				<?php echo get_field('street_address','option'); ?><br/>
+				<?php echo get_field('city','option'); ?>, <?php echo get_field('province','option'); ?> | <?php echo get_field('postal_code','option'); ?>
 			</p>
 
 		</div>
@@ -19,13 +19,13 @@
 			
 			<p>
 				Emergency<br/>
-				<span class="reach-out--contacts--emergency--call">Call 416-784-4444</span>
+				<a href="tel:<?php echo get_field('emergency_phone','option'); ?>"><span class="reach-out--contacts--emergency--call">Call <?php echo get_field('emergency_phone','option'); ?></span></a>
 			</p>
 
 		</div>
 
 	</div>
 
-	<p class="reach-out--contact-us"><span class="reach-out--contact-us--label">Contact us:</span> <a href="mailto:reception@foresthillanimalclinic.ca" class="reach-out--contact-us--email"><span>reception@foresthillanimalclinic.ca</span></a>
+	<p class="reach-out--contact-us"><span class="reach-out--contact-us--label">Contact us:</span> <a href="mailto:<?php echo get_field('reception_email','option'); ?>" class="reach-out--contact-us--email"><span><?php echo get_field('reception_email','option'); ?></span></a>
 
 </div>

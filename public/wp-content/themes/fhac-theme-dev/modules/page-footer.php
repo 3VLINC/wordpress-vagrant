@@ -26,7 +26,7 @@
 				
 				<div class="page-footer--extended-logo">
 
-					<span>Forest Hill Animal Clinic</span>
+					<span><?php echo get_bloginfo('title'); ?></span>
 
 				</div>
 
@@ -44,7 +44,7 @@
 			
 			<div class="page-footer--credits--text">
 				
-				<p>2015 &copy; Forest Hill Animal Clinic  |  Made in Toronto by <a href="http://ballyhoodesign.co">Ballyhoo Graphic Design</a></p>
+				<p><?php echo get_field('copyright_notice', 'option'); ?>  |  Made in Toronto by <a href="http://ballyhoodesign.co">Ballyhoo Graphic Design</a></p>
 
 			</div>
 

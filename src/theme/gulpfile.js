@@ -4,7 +4,7 @@ var gulp = require('gulp');
 // plugins
 
 var minifyCSS = require('gulp-minify-css'), 
-clean = require('gulp-clean'), 
+del = require('del'), 
 sass = require('gulp-sass'), 
 rename = require('gulp-rename'),
 uglify = require('gulp-uglify'), 
@@ -36,8 +36,11 @@ Build = function(environment) {
 
   this.clean = function() {
     
-    gulp.src(this.base_path+'/**/*')
-      .pipe(clean({force: true}));
+    // To do! fix this because del doesn't let you
+    // delete outside of working directory tree
+    // del([
+    //   this.base_path+'/**/*'
+    // ]);
     
   };
 
@@ -209,7 +212,7 @@ else{
 
 }
 
-gulp.task('clean', function() { builder.clean(); });
+gulp.task('clean', function() { return builder.clean(); });
 
 gulp.task('process-php', function() { builder.processPHP(); });
 
