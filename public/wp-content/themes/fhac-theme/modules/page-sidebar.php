@@ -4,7 +4,7 @@
 
 	<div class="page-sidebar--module">
 		
-		<?php Theme::loadModule('search-form'); ?>
+		<?php Theme::loadModule('search-form', array('query' => get_search_query())); ?>
 
 	</div>
 
