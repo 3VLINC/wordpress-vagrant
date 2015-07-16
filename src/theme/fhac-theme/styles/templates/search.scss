@@ -1,0 +1,25 @@
+.search--content {
+
+	padding:$theme-spacing-m ($column-gutter / 2);
+	font-family:$theme-font-family-secondary;
+
+	p {
+		
+		font-family: inherit;
+
+	}
+
+}
+
+.search--heading {
+
+	text-transform: uppercase;
+	color:$theme-color-tertiary;
+	font-size:20px;
+	margin-top:6px;
+
+}
+
+.search--search-form-area {
+	max-width: 200px;
+}

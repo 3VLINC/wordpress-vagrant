@@ -7164,6 +7164,7 @@ input[type="text"].search-form--field {
       color: #bbba5e; } }
 
 .index--content {
+  padding: 15px 0.9375rem;
   font-family: "RobotoCondensedRegular", sans-serif; }
   .index--content p {
     font-family: inherit; }
@@ -7373,6 +7374,21 @@ input[type="text"].search-form--field {
 
 .single-post--content {
   padding: 15px 0.9375rem; }
+
+.search--content {
+  padding: 15px 0.9375rem;
+  font-family: "RobotoCondensedRegular", sans-serif; }
+  .search--content p {
+    font-family: inherit; }
+
+.search--heading {
+  text-transform: uppercase;
+  color: #9d9fa2;
+  font-size: 20px;
+  margin-top: 6px; }
+
+.search--search-form-area {
+  max-width: 200px; }
 
 .four-oh-four--content {
   padding: 15px 0.9375rem 0;
