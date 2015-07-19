@@ -3,7 +3,7 @@
 @import "settings/foundation-settings";
 
 // Framework
-@import "../../bower_components/foundation/scss/foundation";
+@import "../../../../bower_components/foundation/scss/foundation";
 
 // Helpers
 @import 'helpers/mixins';
@@ -11,23 +11,39 @@
 @import "helpers/fonts";
 @import "helpers/common";
 @import "helpers/plugins";
+@import "helpers/editor-styles";
 
 // Modules
+@import "modules/about-us-person";
 @import "modules/about-us-persons";
 @import "modules/about-us-person-details";
+@import "modules/blog-post";
+@import "modules/directions";
 @import "modules/page-header";
 @import "modules/page-sidebar";
 @import "modules/page-footer";
+@import "modules/parking";
 @import "modules/reach-out";
 @import "modules/search-form";
 @import "modules/hours";
 @import "modules/latest-posts";
+@import "modules/parent-page-menu";
+@import "modules/parent-page-section";
+@import "modules/parent-page-sections";
 @import "modules/main-menu";
 @import "modules/social-menu";
+@import "modules/twitter-feed";
 
 // Pages
 @import "templates/index";
+@import "templates/contact";
+@import "templates/front-page";
+@import "templates/home";
 @import "templates/about-us";
+@import "templates/parent-page";
+@import "templates/single-post";
+@import "templates/search";
+@import "templates/404";
 
 .page-main {
 
@@ -47,36 +63,14 @@
 
 	.page-content {
 
-		@include grid-column($columns:12);
+		@include grid-column($columns:12, $collapse:true);
 		
 		@media #{$medium-up} {
 
-			@include grid-column($columns:9, $collapse:false, $push:3);
+			@include grid-column($columns:9, $collapse:true, $push:3);
 
 		}
 
 	}
 
 }
-
-
-.page-content {
-
-	padding-top:$theme-spacing-l;
-	padding-bottom:$theme-spacing-l;
-
-	body.home & {
-		
-		padding-top:0px;
-
-	}
-
-}
-
-.page-sidebar {
-
-	padding-top:$theme-spacing-l;
-	padding-bottom:$theme-spacing-l;
-
-}
-

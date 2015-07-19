@@ -1,5 +1,5 @@
 // Allows the use of rem-calc() or lower-bound() in your settings
-@import "../../../bower_components/foundation/scss/foundation/functions";
+@import "../../../../../bower_components/foundation/scss/foundation/functions";
 
 $base-font-size: $theme-font-base-size;
 
@@ -24,8 +24,10 @@ $rem-base: $base-font-size;
 	$topbar-bg-color: transparent;
 	$topbar-dropdown-bg: $theme-color-base;
 	$topbar-dropdown-link-bg-hover:transparent;
-	$topbar-link-bg: transparent;
 	$topbar-dropdown-link-bg:transparent;
+	$topbar-link-bg: transparent;
+	$topbar-link-bg-active-hover:transparent;
+	$topbar-link-bg-active:transparent;
 	$topbar-dropdown-link-color:$theme-color-tertiary;
 
 	$topbar-link-color: $theme-color-tertiary;

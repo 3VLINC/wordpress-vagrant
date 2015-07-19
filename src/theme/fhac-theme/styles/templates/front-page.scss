@@ -1,0 +1,45 @@
+.front-page--intro {
+	
+	background:url('../images/fhac-intro.jpg');
+	background-size: cover;
+	height:357px;
+	text-align: center;
+	padding:40px 20px;
+	color:$theme-color-secondary;
+
+}
+
+.front-page--intro--title {
+
+	font-size: 14px;
+	text-transform: uppercase;
+	color:inherit;
+	margin:0 0 120px 0;
+
+}
+
+.front-page--intro--tagline {
+	
+	font-size:24px;
+	line-height:28px;
+	font-family: $theme-font-family-tertiary;
+	font-style: italic;
+	color:inherit;
+	margin: 0 0 5px 0;
+
+}
+
+.front-page--intro--now-accepting {
+
+	text-transform: uppercase;
+	font-size:14px;
+	font-weight: bold;
+
+}
+
+.front-page--content {
+
+	padding:40px ($column-gutter /2) $theme-spacing-m;
+	font-family:$theme-font-family-secondary;
+
+}

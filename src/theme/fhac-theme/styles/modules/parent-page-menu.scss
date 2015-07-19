@@ -1,0 +1,44 @@
+.parent-page-menu {
+	
+	font-family:$theme-font-family-secondary;
+	font-size:14px;
+	text-transform: uppercase;
+	text-align: center;
+
+}
+
+.parent-page-menu--list {
+	
+	list-style: none;
+	color: $theme-color-primary;
+	font-size:14px;
+	margin:0 0 $theme-spacing-m 0;
+
+	li {
+		
+		display: inline-block;
+
+	}
+
+	a {
+		
+		color:inherit;
+		font-size:inherit;
+
+	}
+
+}
+
+.parent-page-menu--list-label {
+
+	font-style: italic;
+	color:$theme-color-tertiary;
+	text-transform: none;
+
+}
+
+.parent-page-menu--list-item {
+
+
+
+}

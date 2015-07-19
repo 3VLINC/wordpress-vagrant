@@ -1,0 +1,46 @@
+.four-oh-four--content {
+	
+	padding:$theme-spacing-m ($column-gutter / 2) 0;
+	text-align: center;
+
+}
+
+.four-oh-four--heading {
+
+	font-size:40px;
+	color:$theme-color-primary;
+	font-family:$theme-font-family-tertiary;
+
+}
+
+.four-oh-four--sub-heading {
+
+	font-size:16px;
+	color:$theme-color-primary;
+	text-transform: uppercase;
+
+}
+
+.four-oh-four--text {
+	
+	font-family:$theme-font-family-secondary;
+	color:$theme-color-tertiary;
+	font-size:14px;
+	font-style: italic;
+	margin-bottom:30px;
+
+	a {
+		
+		color:$theme-color-primary;
+		text-transform: uppercase;
+		font-style: normal;
+
+	}
+}
+
+.four-oh-four--image {
+	
+	@extend .banner-column-gutter-offset;
+	margin-bottom: 0px;
+
+}

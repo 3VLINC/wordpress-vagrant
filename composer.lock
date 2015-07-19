@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "b15fb9a0bf6fa55708153bbe75356687",
+    "hash": "c420e065eb2682e8413f519844d710e9",
     "packages": [
         {
             "name": "composer/installers",
@@ -254,15 +254,15 @@
         },
         {
             "name": "wpackagist-plugin/google-analytics-for-wordpress",
-            "version": "5.4.2",
+            "version": "5.4.3",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/google-analytics-for-wordpress/",
-                "reference": "tags/5.4.2"
+                "reference": "tags/5.4.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/google-analytics-for-wordpress.5.4.2.zip",
+                "url": "https://downloads.wordpress.org/plugin/google-analytics-for-wordpress.5.4.3.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -271,6 +271,26 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/google-analytics-for-wordpress/"
+        },
+        {
+            "name": "wpackagist-plugin/kebo-twitter-feed",
+            "version": "1.5.8",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/kebo-twitter-feed/",
+                "reference": "tags/1.5.8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/kebo-twitter-feed.1.5.8.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/kebo-twitter-feed/"
         },
         {
             "name": "wpackagist-plugin/mailchimp",
@@ -291,26 +311,6 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/mailchimp/"
-        },
-        {
-            "name": "wpackagist-plugin/recent-tweets-widget",
-            "version": "1.6.3",
-            "source": {
-                "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/recent-tweets-widget/",
-                "reference": "tags/1.6.3"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/recent-tweets-widget.1.6.3.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/recent-tweets-widget/"
         },
         {
             "name": "wpackagist-plugin/regenerate-thumbnails",

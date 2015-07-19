@@ -1,5 +1,5 @@
 .DS_Store
 .vagrant
-src/theme/bower_components
-src/theme/node_modules
+bower_components
+node_modules
 .env

@@ -1,0 +1,27 @@
+.parking--title {
+	
+	text-transform: uppercase;
+	color:$theme-color-primary;
+	font-size:16px;
+
+}
+
+.parking--description, .parking--link {
+
+	font-family:$theme-font-family-secondary;
+	font-size:14px;
+
+	a {
+		
+		color:$theme-color-primary;
+		font-style: italic;
+
+	}
+
+}
+
+.parking--link {
+	
+	margin-bottom:0px;
+
+}

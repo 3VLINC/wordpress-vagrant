@@ -17,7 +17,7 @@
         "wpackagist-plugin/google-analytics-for-wordpress":">=5.4.2",
         "wpackagist-plugin/mailchimp":">=1.4.2",
         "wpackagist-plugin/wordpress-seo":">=2.1.1",
-        "wpackagist-plugin/recent-tweets-widget":">=1.6.3",
+        "wpackagist-plugin/kebo-twitter-feed": ">=1.5.8",
 	   "johnpbloch/wordpress": ">4.2"
     },
     "config": {
