@@ -17,8 +17,6 @@ module.exports = function() {
 
 			$('.contact--tools .contact--tools--module').matchHeight();
 
-			$('html').removeClass('no-js').addClass('js');
-
 			$(document).foundation();
 
 			$('[data-google-directions]').on(
