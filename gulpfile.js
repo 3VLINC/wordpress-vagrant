@@ -220,7 +220,7 @@ gulp.task('watch',
 
 	function() {
 
-		gulp.watch(src_path+'styles/*.scss', ['compile-scss']);
+		gulp.watch(src_path+'styles/**/*.scss', ['compile-scss']);
 
 		gulp.watch(src_path+'scripts/**/*.js', ['browserify-javascript']);
 
