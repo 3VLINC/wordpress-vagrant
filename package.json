@@ -33,7 +33,7 @@
     "jquery.cookie": "./bower_components/jquery.cookie/jquery.cookie.js",
     "matchHeight": "./bower_components/matchHeight/jquery.matchHeight.js",
     "respond": "./bower_components/respond/dest/respond.src.js",
-    "modernizr": "./node_modules/browsernizr/index.js",
+    "modernizr": "./src/theme/fhac-theme/scripts/modernizr-shim.js",
     "jquery": "./src/theme/fhac-theme/scripts/jquery-shim.js"
   },
   "browserify": {
