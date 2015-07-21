@@ -80,6 +80,12 @@
 		height:14px;
 		float:right;
 
+		&:hover {
+		
+			@extend .background-image-sread-more--hover;
+		
+		}
+
 	}
 
 

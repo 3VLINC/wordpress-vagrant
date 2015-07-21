@@ -64,6 +64,7 @@
 	.page-content {
 
 		@include grid-column($columns:12, $collapse:true);
+		background: $theme-color-quarternary;
 		
 		@media #{$medium-up} {
 

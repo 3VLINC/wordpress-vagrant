@@ -1,23 +1,41 @@
-// Recent Tweets Plugin
-.tp_recent_tweets {
+// Twitter Widget
+.page-sidebar--widget.kebo_twitter_feed_widget {
+
+	font-size:12px;
+	line-height:16px;
+	color:$theme-color-base-inverse;
+	word-break:break-word;
+
+	a.kaccount, a.kdate {
+		
+		color:inherit;
+
+	}
+
+	a.kdate {
+		
+		float: none;
+
+	}
+
+	.kebo-tweets .ktweet .kavatar {
+
+		width:28px;
+		height:28px;
+		margin:0 5px 0 0;
+
+	}
+
+	.kebo-tweets .ktweet .ktext {
+		margin:5px 0 10px 0;
+	}
+
+	a {
+		
+		color:$theme-color-primary;
+
+	}
 	
-	float:none;
-	clear:none;
-
-	ul {
-		margin:0px;
-	}
-
-	li {
-
-		background: none;
-		padding:0px;
-		text-align: left;
-		float:none;
-		clear: none;
-
-	}
-
 }
 
 // Foundation Top Bar
