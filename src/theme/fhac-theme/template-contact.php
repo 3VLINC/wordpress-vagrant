@@ -108,7 +108,28 @@
 
 		<div class="contact--info--module">
 			
-			<?php Theme::loadModule('twitter-feed'); ?>
+			<?php 
+
+				$address = urlencode(
+					sprintf(
+						'%s %s %s %s',
+						get_field('street_address','option'),
+						get_field('city','option'),
+						get_field('province','option'),
+						get_field('postal_code','option')
+					)
+				);
+
+				printf(
+					'<a href="https://www.google.com/maps?f=d&saddr&daddr=%s">
+						<img src="https://maps.googleapis.com/maps/api/staticmap?center=%s&zoom=14&size=500x500&markers=color:red%%7Clabel:A%%7C%s">
+					</a>',
+					$address,
+					$address,
+					$address
+				);
+
+			?>
 
 		</div>
 

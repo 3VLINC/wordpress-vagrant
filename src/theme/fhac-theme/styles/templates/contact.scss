@@ -77,6 +77,12 @@
 
 }
 
+.contact--tools--parking {
+	
+	padding:0 30px;
+
+}
+
 .contact--tools--parking--title {
 	
 	text-transform: uppercase;
@@ -88,7 +94,8 @@
 .contact--tools--parking p {
 
 	font-family:$theme-font-family-secondary;
-	font-size:14px;
+	letter-spacing:$theme-font-family-secondary-letter-spacing;
+	font-size:12px;
 
 	a {
 		

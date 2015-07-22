@@ -99,23 +99,18 @@ function compileSCSS(src_file, dest_filename, dest, delete_glob) {
 
 			gulp.src(src_file)
 			.pipe(
-				plumber(
-					{
-						errorHandler: notify.onError("Error Building Styles: <%= error.message %>")
-					}
-				)
-			)
-			.pipe(
-				sass()
+				sass({
+					errLogToConsole: false,
+			        onError: function(err) {
+			            return notify().write(err);
+			        }
+				})
 			)
 			.pipe(
 				minifyCSS()
 			)
 			.pipe(
 				rename(dest_filename)
-			)
-			.pipe(
-				plumber.stop()
 			)
 			.pipe(
 				gulp.dest(dest)
