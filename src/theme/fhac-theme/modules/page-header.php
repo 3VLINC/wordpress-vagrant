@@ -14,7 +14,7 @@
 
 		<p class="page-header--emergency-info">
 
-			In case of emergency, call<br />
+			In case of emergency outside of our clinic hours, call<br />
 
 			<a href="tel:<?php echo get_field('emergency_phone','option'); ?>"><?php echo get_field('emergency_phone','option'); ?></a>
 

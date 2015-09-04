@@ -19,6 +19,7 @@
 			
 			<p>
 				Emergency<br/>
+				outside clinic hours<br/>
 				<a href="tel:<?php echo get_field('emergency_phone','option'); ?>"><span class="reach-out--contacts--emergency--call">Call <?php echo get_field('emergency_phone','option'); ?></span></a>
 			</p>
 
