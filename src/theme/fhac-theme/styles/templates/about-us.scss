@@ -2,16 +2,7 @@
 
 	font-size:16px;
 	font-family:$theme-font-family-secondary;
+	letter-spacing:$theme-font-family-secondary-letter-spacing;
 	padding:$theme-spacing-m ($column-gutter / 2);
-
-}
-
-.page-content {
-
-	.page-template-template-about-us & {
-
-		background: $theme-color-quarternary;
-
-	}
 
 }

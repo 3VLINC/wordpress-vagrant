@@ -4,6 +4,7 @@
 	background-size: cover;
 	height:357px;
 	text-align: center;
+	letter-spacing: 1px;
 	padding:40px 20px;
 	color:$theme-color-secondary;
 
@@ -41,5 +42,19 @@
 
 	padding:40px ($column-gutter /2) $theme-spacing-m;
 	font-family:$theme-font-family-secondary;
+	letter-spacing: $theme-font-family-secondary-letter-spacing;
+
+	p {
+		
+		font-size:$theme-font-size-s;
+
+		&:first-child {
+			
+			font-size:$theme-font-size-m;
+			margin-bottom:$theme-spacing-xl;
+
+		}
+
+	}
 
 }

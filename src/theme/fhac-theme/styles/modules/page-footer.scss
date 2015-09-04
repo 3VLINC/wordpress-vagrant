@@ -1,6 +1,7 @@
 .page-footer {
 	
 	@include grid-row();
+	background:$theme-color-base;
 
 	.page-footer--content {
 
@@ -113,7 +114,7 @@
 
 	.page-footer--credits--text {
 
-		@include grid-column($columns:12);
+		@include grid-column($columns:6, $offset:6);
 
 	}
 
@@ -125,14 +126,9 @@
 	background-color: $theme-color-secondary;
 	padding: 15px 0 15px 0;
 	font-family:$theme-font-family-secondary;
-	font-size:12px;
+	letter-spacing:$theme-font-family-secondary-letter-spacing;
+	font-size:13px;
 	color:#FFF;
-
-	@media #{$medium-up} {
-	
-		text-align: right;
-	
-	}
 
 	p {
 		font-family: inherit;
@@ -149,6 +145,14 @@
 		padding:5px 0;
 		border-bottom:4px solid $theme-color-primary;
 
+	}
+
+}
+
+.page-footer--credits--text p {
+	
+	@media #{$medium-up} {
+		padding-left:50px;
 	}
 
 }

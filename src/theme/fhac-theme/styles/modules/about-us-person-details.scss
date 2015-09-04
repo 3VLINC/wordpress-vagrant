@@ -52,6 +52,12 @@
 		height:13px;
 		width:13px;
 
+		&:hover {
+		
+			@extend .background-image-sread-more--hover;
+		
+		}
+
 	}
 
 	.about-us-person & {

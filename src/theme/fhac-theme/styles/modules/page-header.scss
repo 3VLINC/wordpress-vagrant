@@ -1,6 +1,7 @@
 .page-header {
 
 	@include grid-row();
+	background:$theme-color-base;
 
 	.page-header--contact {
 

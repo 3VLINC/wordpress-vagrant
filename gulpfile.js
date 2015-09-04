@@ -99,23 +99,18 @@ function compileSCSS(src_file, dest_filename, dest, delete_glob) {
 
 			gulp.src(src_file)
 			.pipe(
-				plumber(
-					{
-						errorHandler: notify.onError("Error Building Styles: <%= error.message %>")
-					}
-				)
-			)
-			.pipe(
-				sass()
+				sass({
+					errLogToConsole: false,
+			        onError: function(err) {
+			            return notify().write(err);
+			        }
+				})
 			)
 			.pipe(
 				minifyCSS()
 			)
 			.pipe(
 				rename(dest_filename)
-			)
-			.pipe(
-				plumber.stop()
 			)
 			.pipe(
 				gulp.dest(dest)
@@ -220,7 +215,7 @@ gulp.task('watch',
 
 	function() {
 
-		gulp.watch(src_path+'styles/*.scss', ['compile-scss']);
+		gulp.watch(src_path+'styles/**/*.scss', ['compile-scss']);
 
 		gulp.watch(src_path+'scripts/**/*.js', ['browserify-javascript']);
 
@@ -240,6 +235,21 @@ gulp.task('watch',
 
 	}
 
+);
+
+gulp.task(
+  'build',
+  [
+    'compile-scss',
+    'browserify-javascript',
+    'copy-php',
+    'copy-fonts',
+    'copy-modules',
+    'copy-images',
+    'copy-templates',
+    'copy-screenshot',
+    'copy-theme-file'
+  ]
 );
 
 gulp.task('default', ['watch']);

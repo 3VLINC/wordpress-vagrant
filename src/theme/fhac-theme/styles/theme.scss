@@ -22,7 +22,6 @@
 @import "modules/page-header";
 @import "modules/page-sidebar";
 @import "modules/page-footer";
-@import "modules/parking";
 @import "modules/reach-out";
 @import "modules/search-form";
 @import "modules/hours";
@@ -64,6 +63,7 @@
 	.page-content {
 
 		@include grid-column($columns:12, $collapse:true);
+		background: $theme-color-quarternary;
 		
 		@media #{$medium-up} {
 
