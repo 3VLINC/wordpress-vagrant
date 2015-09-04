@@ -24,17 +24,33 @@
 
 		</div>
 
-		<div class="contact--tools--module contact--tools--module--parking">
-			
-			<div class="contact--tools--parking">
-	
-				<h1 class="contact--tools--parking--title">Parking</h1>
+		<?php 
+
+			if(($parking_heading = get_field('parking_heading')) && ($parking_information = get_field('parking_information')))
+			{
+
+				printf(
+					'
+					<div class="contact--tools--module contact--tools--module--parking">
+						
+						<div class="contact--tools--parking">
 				
-				<?php echo get_field('parking_information'); ?>
+							<h1 class="contact--tools--parking--title">%s</h1>
+							
+							%s
 
-			</div>
+						</div>
 
-		</div>
+					</div>
+					',
+					$parking_heading,
+					$parking_information
+				);
+
+			}
+
+		?>
+		
 
 	</div>
 
@@ -76,28 +92,34 @@
 
 				<?php if($policy_information = get_field('policy_information')) printf('<div class="contact--details--policies">%s</div>', $policy_information); ?>
 				
+				<?php 
 
-				<div class="contact--details--email">
-					
-					<h1><a href="mailto:<?php echo get_field('reception_email', 'option'); ?>"><span>Email Us</span></a></h1>
+					if($email_heading = get_field('email_heading')) {
 
-				</div>
+						printf(
+							'<div class="contact--details--email"><h1><a href="mailto:%s"><span>%s</span></a></h1></div>',
+							get_field('reception_email', 'option'),
+							$email_heading
+						);
 
+					} 
+
+				?>
 
 				<?php 
 
-					if($emergency_information = get_field('emergency_information')) {
+					if(($emergency_information = get_field('emergency_information')) && ($emergency_heading = get_field('emergency_heading'))) {
 
-						printf('<div class="contact--details--emergency"><h1>Emergency</h1>%s</div>', $emergency_information);
+						printf('<div class="contact--details--emergency"><h1>%s</h1>%s</div>', $emergency_heading, $emergency_information);
 
 					}
 				?>
 
 				<?php 
 
-					if($pet_photo_information = get_field('pet_photo_information')) {
+					if(($pet_photo_information = get_field('pet_photo_information')) && ($pet_photo_heading = get_field('pet_photo_heading'))) {
 
-						printf('<div class="contact--details--pet-photo"><h1>Submit a Photo of Your Pet!</h1>%s</div>', $pet_photo_information);
+						printf('<div class="contact--details--pet-photo"><h1>%s</h1>%s</div>', $pet_photo_heading, $pet_photo_information);
 
 					}
 				?>
