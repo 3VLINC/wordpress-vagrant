@@ -237,4 +237,19 @@ gulp.task('watch',
 
 );
 
+gulp.task(
+  'build',
+  [
+    'compile-scss',
+    'browserify-javascript',
+    'copy-php',
+    'copy-fonts',
+    'copy-modules',
+    'copy-images',
+    'copy-templates',
+    'copy-screenshot',
+    'copy-theme-file'
+  ]
+);
+
 gulp.task('default', ['watch']);
