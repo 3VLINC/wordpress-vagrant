@@ -37,11 +37,10 @@
 
 		<?php
 
-			$title_content = sprintf(
-				'%s %s',
-				get_sub_field('first_name'),
-				get_sub_field('last_name')
-			);
+			$name = array(get_sub_field('first_name'));
+			if($last_name = get_sub_field('last_name')) $name[] = $last_name;
+
+			$title_content = sprintf(implode(' ', $name));
 
 			if($excerpt == true)
 			{
