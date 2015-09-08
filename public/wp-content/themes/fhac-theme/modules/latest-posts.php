@@ -32,7 +32,7 @@
 			
 			<section>
 				
-				<h1 class="latest-posts--post--title"><a href="<?php the_permalink(); ?>">[BLOG] <?php the_title(); ?></a></h1>
+				<h1 class="latest-posts--post--title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
 
 				<div class="latest-posts--post--excerpt">
 					
