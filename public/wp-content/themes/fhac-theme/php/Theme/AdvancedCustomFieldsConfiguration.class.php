@@ -757,6 +757,27 @@ class AdvancedCustomFieldsConfiguration
 						'readonly' => 0,
 						'disabled' => 0,
 					),
+					array (
+						'key' => 'field_55a4584b4g887',
+						'label' => 'Extra Note',
+						'name' => 'extra',
+						'type' => 'text',
+						'instructions' => '',
+						'required' => 0,
+						'conditional_logic' => 0,
+						'wrapper' => array (
+							'width' => '',
+							'class' => '',
+							'id' => '',
+						),
+						'default_value' => '',
+						'placeholder' => '',
+						'prepend' => '',
+						'append' => '',
+						'maxlength' => '',
+						'readonly' => 0,
+						'disabled' => 0,
+					),
 				),
 				'location' => array (
 					array (

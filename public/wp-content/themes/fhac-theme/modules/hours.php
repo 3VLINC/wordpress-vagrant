@@ -14,4 +14,10 @@
 
 	</ul>
 
+	<?php 
+
+		if($extra = get_field('extra', 'option')) printf('<p class="hours--extra">%s</p>', $extra);
+
+	?>
+
 </section>

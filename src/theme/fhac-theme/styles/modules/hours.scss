@@ -22,7 +22,7 @@
 	@extend .no-bullet;
 	font-size:11px;
 	line-height:13px;
-	margin:0;
+	margin:0 0 $theme-spacing-s 0;
 
 	>li {
 		
@@ -65,5 +65,15 @@
 
 	}
 
+
+}
+
+.hours--extra {
+	
+	font-size: 10px;
+	text-transform: uppercase;
+	line-height:$theme-font-size-xs+2px;
+	text-align: center;
+	margin:0;
 
 }
