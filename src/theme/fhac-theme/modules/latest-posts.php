@@ -4,7 +4,13 @@
 
 	<?php 
 
-		$query = new \WP_Query(array('posts_per_page' => 1));
+		$query = new \WP_Query(
+			array(
+				'posts_per_page' => 1,
+				'orderby' => 'date',
+				'order'   => 'DESC'
+			)
+		);
 
 		if($query->have_posts())
 		{
