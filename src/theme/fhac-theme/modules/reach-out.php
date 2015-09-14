@@ -27,6 +27,6 @@
 
 	</div>
 
-	<p class="reach-out--contact-us"><span class="reach-out--contact-us--label">Contact us:</span> <a href="mailto:<?php echo get_field('reception_email','option'); ?>" class="reach-out--contact-us--email"><span><?php echo get_field('reception_email','option'); ?></span></a>
+	<p class="reach-out--contact-us"><span class="reach-out--contact-us--label">Contact us:</span> <a href="mailto:<?php echo get_field('reception_email','option'); ?>" class="reach-out--contact-us--email" target="_blank"><span><?php echo get_field('reception_email','option'); ?></span></a>
 
 </div>
