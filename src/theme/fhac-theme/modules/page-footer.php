@@ -44,7 +44,7 @@
 			
 			<div class="page-footer--credits--text">
 				
-				<p><?php echo get_field('copyright_notice', 'option'); ?>  |  Made in Toronto by <a href="http://ballyhoodesign.co">Ballyhoo Graphic Design</a></p>
+				<p><?php echo get_field('copyright_notice', 'option'); ?>  |  Made in Toronto by <a href="http://ballyhoodesign.co" target="_blank">Ballyhoo Graphic Design</a></p>
 
 			</div>
 

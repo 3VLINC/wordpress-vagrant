@@ -16,7 +16,7 @@ foreach($networks as $handle => $info)
     {
 
         $links[] = sprintf(
-            '<li class="social-menu--network social-menu--network--%s"><a href="%s"><span>%s</span></a></li>',
+            '<li class="social-menu--network social-menu--network--%s"><a href="%s" target="_blank"><span>%s</span></a></li>',
             $handle,
             $info['url'],
             $info['name']
