@@ -239,17 +239,61 @@
         ]
     },
     {
-        "name": "wpackagist-plugin/wordpress-seo",
-        "version": "2.2.1",
-        "version_normalized": "2.2.1.0",
+        "name": "wpackagist-plugin/advanced-custom-fields",
+        "version": "4.4.3",
+        "version_normalized": "4.4.3.0",
         "source": {
             "type": "svn",
-            "url": "http://plugins.svn.wordpress.org/wordpress-seo/",
-            "reference": "tags/2.2.1"
+            "url": "http://plugins.svn.wordpress.org/advanced-custom-fields/",
+            "reference": "trunk"
         },
         "dist": {
             "type": "zip",
-            "url": "https://downloads.wordpress.org/plugin/wordpress-seo.2.2.1.zip",
+            "url": "https://downloads.wordpress.org/plugin/advanced-custom-fields.zip",
+            "reference": null,
+            "shasum": null
+        },
+        "require": {
+            "composer/installers": "~1.0"
+        },
+        "type": "wordpress-plugin",
+        "installation-source": "dist",
+        "homepage": "https://wordpress.org/plugins/advanced-custom-fields/"
+    },
+    {
+        "name": "wpackagist-plugin/google-analytics-for-wordpress",
+        "version": "5.4.6",
+        "version_normalized": "5.4.6.0",
+        "source": {
+            "type": "svn",
+            "url": "http://plugins.svn.wordpress.org/google-analytics-for-wordpress/",
+            "reference": "tags/5.4.6"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://downloads.wordpress.org/plugin/google-analytics-for-wordpress.5.4.6.zip",
+            "reference": null,
+            "shasum": null
+        },
+        "require": {
+            "composer/installers": "~1.0"
+        },
+        "type": "wordpress-plugin",
+        "installation-source": "dist",
+        "homepage": "https://wordpress.org/plugins/google-analytics-for-wordpress/"
+    },
+    {
+        "name": "wpackagist-plugin/wordpress-seo",
+        "version": "2.3.4",
+        "version_normalized": "2.3.4.0",
+        "source": {
+            "type": "svn",
+            "url": "http://plugins.svn.wordpress.org/wordpress-seo/",
+            "reference": "tags/2.3.4"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://downloads.wordpress.org/plugin/wordpress-seo.2.3.4.zip",
             "reference": null,
             "shasum": null
         },
@@ -261,25 +305,47 @@
         "homepage": "https://wordpress.org/plugins/wordpress-seo/"
     },
     {
-        "name": "johnpbloch/wordpress",
-        "version": "4.2.2",
-        "version_normalized": "4.2.2.0",
+        "name": "wpackagist-plugin/kebo-twitter-feed",
+        "version": "1.5.10",
+        "version_normalized": "1.5.10.0",
         "source": {
-            "type": "git",
-            "url": "https://github.com/johnpbloch/wordpress.git",
-            "reference": "998358f3b7a2c75caae11ff3c79e514951aac7f6"
+            "type": "svn",
+            "url": "http://plugins.svn.wordpress.org/kebo-twitter-feed/",
+            "reference": "tags/1.5.10"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/998358f3b7a2c75caae11ff3c79e514951aac7f6",
-            "reference": "998358f3b7a2c75caae11ff3c79e514951aac7f6",
+            "url": "https://downloads.wordpress.org/plugin/kebo-twitter-feed.1.5.10.zip",
+            "reference": null,
+            "shasum": null
+        },
+        "require": {
+            "composer/installers": "~1.0"
+        },
+        "type": "wordpress-plugin",
+        "installation-source": "dist",
+        "homepage": "https://wordpress.org/plugins/kebo-twitter-feed/"
+    },
+    {
+        "name": "johnpbloch/wordpress",
+        "version": "4.3",
+        "version_normalized": "4.3.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/johnpbloch/wordpress.git",
+            "reference": "2afe902599538caaa0f1fd7579895dd7cc0ac5f7"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/2afe902599538caaa0f1fd7579895dd7cc0ac5f7",
+            "reference": "2afe902599538caaa0f1fd7579895dd7cc0ac5f7",
             "shasum": ""
         },
         "require": {
             "johnpbloch/wordpress-core-installer": "~0.2",
             "php": ">=5.3.2"
         },
-        "time": "2015-05-07 01:46:09",
+        "time": "2015-08-18 18:16:11",
         "type": "wordpress-core",
         "installation-source": "dist",
         "notification-url": "https://packagist.org/downloads/",
@@ -298,71 +364,5 @@
             "blog",
             "cms"
         ]
-    },
-    {
-        "name": "wpackagist-plugin/google-analytics-for-wordpress",
-        "version": "5.4.3",
-        "version_normalized": "5.4.3.0",
-        "source": {
-            "type": "svn",
-            "url": "http://plugins.svn.wordpress.org/google-analytics-for-wordpress/",
-            "reference": "tags/5.4.3"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://downloads.wordpress.org/plugin/google-analytics-for-wordpress.5.4.3.zip",
-            "reference": null,
-            "shasum": null
-        },
-        "require": {
-            "composer/installers": "~1.0"
-        },
-        "type": "wordpress-plugin",
-        "installation-source": "dist",
-        "homepage": "https://wordpress.org/plugins/google-analytics-for-wordpress/"
-    },
-    {
-        "name": "wpackagist-plugin/kebo-twitter-feed",
-        "version": "1.5.8",
-        "version_normalized": "1.5.8.0",
-        "source": {
-            "type": "svn",
-            "url": "http://plugins.svn.wordpress.org/kebo-twitter-feed/",
-            "reference": "tags/1.5.8"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://downloads.wordpress.org/plugin/kebo-twitter-feed.1.5.8.zip",
-            "reference": null,
-            "shasum": null
-        },
-        "require": {
-            "composer/installers": "~1.0"
-        },
-        "type": "wordpress-plugin",
-        "installation-source": "dist",
-        "homepage": "https://wordpress.org/plugins/kebo-twitter-feed/"
-    },
-    {
-        "name": "wpackagist-plugin/advanced-custom-fields",
-        "version": "4.4.2",
-        "version_normalized": "4.4.2.0",
-        "source": {
-            "type": "svn",
-            "url": "http://plugins.svn.wordpress.org/advanced-custom-fields/",
-            "reference": "trunk"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://downloads.wordpress.org/plugin/advanced-custom-fields.zip",
-            "reference": null,
-            "shasum": null
-        },
-        "require": {
-            "composer/installers": "~1.0"
-        },
-        "type": "wordpress-plugin",
-        "installation-source": "dist",
-        "homepage": "https://wordpress.org/plugins/advanced-custom-fields/"
     }
 ]

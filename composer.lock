@@ -4,7 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "c420e065eb2682e8413f519844d710e9",
+    "hash": "d67470b3d98ae9522699cc5bfcbe87a1",
+    "content-hash": "1714d4e68a7d06d01dc47e13520e60e3",
     "packages": [
         {
             "name": "composer/installers",
@@ -103,16 +104,16 @@
         },
         {
             "name": "johnpbloch/wordpress",
-            "version": "4.2.2",
+            "version": "4.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress.git",
-                "reference": "998358f3b7a2c75caae11ff3c79e514951aac7f6"
+                "reference": "2afe902599538caaa0f1fd7579895dd7cc0ac5f7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/998358f3b7a2c75caae11ff3c79e514951aac7f6",
-                "reference": "998358f3b7a2c75caae11ff3c79e514951aac7f6",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/2afe902599538caaa0f1fd7579895dd7cc0ac5f7",
+                "reference": "2afe902599538caaa0f1fd7579895dd7cc0ac5f7",
                 "shasum": ""
             },
             "require": {
@@ -136,7 +137,7 @@
                 "blog",
                 "cms"
             ],
-            "time": "2015-05-07 01:46:09"
+            "time": "2015-08-18 18:16:11"
         },
         {
             "name": "johnpbloch/wordpress-core-installer",
@@ -234,7 +235,7 @@
         },
         {
             "name": "wpackagist-plugin/advanced-custom-fields",
-            "version": "4.4.2",
+            "version": "4.4.3",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/advanced-custom-fields/",
@@ -254,15 +255,15 @@
         },
         {
             "name": "wpackagist-plugin/google-analytics-for-wordpress",
-            "version": "5.4.3",
+            "version": "5.4.6",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/google-analytics-for-wordpress/",
-                "reference": "tags/5.4.3"
+                "reference": "tags/5.4.6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/google-analytics-for-wordpress.5.4.3.zip",
+                "url": "https://downloads.wordpress.org/plugin/google-analytics-for-wordpress.5.4.6.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -274,15 +275,15 @@
         },
         {
             "name": "wpackagist-plugin/kebo-twitter-feed",
-            "version": "1.5.8",
+            "version": "1.5.10",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/kebo-twitter-feed/",
-                "reference": "tags/1.5.8"
+                "reference": "tags/1.5.10"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/kebo-twitter-feed.1.5.8.zip",
+                "url": "https://downloads.wordpress.org/plugin/kebo-twitter-feed.1.5.10.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -334,15 +335,15 @@
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",
-            "version": "2.2.1",
+            "version": "2.3.4",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/wordpress-seo/",
-                "reference": "tags/2.2.1"
+                "reference": "tags/2.3.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.2.2.1.zip",
+                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.2.3.4.zip",
                 "reference": null,
                 "shasum": null
             },
