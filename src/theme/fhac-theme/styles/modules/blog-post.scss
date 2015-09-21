@@ -49,28 +49,6 @@
 
 }
 
-.blog-post--the-excerpt {
-
-	font-size:16px;
-	font-family: $theme-font-family-secondary;
-	letter-spacing: $theme-font-family-secondary-letter-spacing;
-	margin-bottom:$theme-spacing-xl;
-
-	@media #{$medium-up} {
-	
-		padding:0 40px;
-
-	}
-
-	* {
-		
-		font-size:inherit;
-		font-family:inherit;
-
-	}
-
-}
-
 .blog-post--the-content {
 
 	@extend .editor-styles;
@@ -83,7 +61,7 @@
 
 	font-size:16px;
 	font-family: $theme-font-family-secondary;
-letter-spacing: $theme-font-family-secondary-letter-spacing;
+	letter-spacing: $theme-font-family-secondary-letter-spacing;
 	margin-bottom:40px;
 
 	* {

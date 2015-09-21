@@ -4,11 +4,6 @@
 	
 	<h1 class="blog-post--title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
 
-	<div class="blog-post--the-excerpt">
-
-		<?php the_excerpt(); ?>
-		
-	</div>
 
 	<?php 
 
